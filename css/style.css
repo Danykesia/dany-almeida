@@ -10,7 +10,7 @@
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
   --text-size-xs: 1rem;
-  --text-size-s: 1.12rem;
+  --text-size-s: 1.125rem;
   --text-size-m: 1.25
   --text-size-l: 2.25rem;
   --text-size-xl: 2.87rem;
@@ -36,10 +36,46 @@ li {
   list-style: none;
 }
 
-header {
-  height: 10vh;
-  background-color: lightgreen;
+.container {
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
 }
+
+header {
+  background-color: transparent;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text-light);
+  font-family: var(--font-secondary);
+  font-size: var(--text-size-s);
+  font-weight: 300;
+}
+
+nav ul a {
+  margin: 0 30px;
+  position: relative;
+}
+
+.btn-contact {
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 50px;
+  padding: 8px 25px;
+}
+
 main {
   height: 85vh;
   background-color: lightsalmon;
