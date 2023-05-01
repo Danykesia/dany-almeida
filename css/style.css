@@ -39,7 +39,7 @@ li {
 
 #grained {
   height: 96vh;
-  width: 100vh;
+  width: 100vw;
 }
 
 .container {
@@ -314,7 +314,6 @@ main .container {
 
 .headline a {
   color: var(--color-primary-x-dark);
-  font-size: var(--text-size-xs);
   display: block;
   position: relative;
   box-shadow: 0px 4px 4px rgba(51, 6, 148, 0.34);
@@ -430,12 +429,12 @@ main .container {
 }
 
 #work {
-  background-color: var(--bg-light);
+  background-color: var(--color-primary-light);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
 }
 
 #work h2 {
@@ -461,15 +460,16 @@ main .container {
 .work-slider section {
   flex-basis: 16.66%;
   flex-shrink: 0;
-  flex: 1;
   width: 16.66%;
-  height: 75vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
 }
 
 .arrow {
@@ -493,11 +493,13 @@ main .container {
 }
 
 .work-card {
-  background-color: var(--color-primary-dark);
+  background: linear-gradient(270deg, #6b3ef0 3.75%, #471EBB 105.56%);
   max-width: 100%;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
+  height: 18vh;
+  display: flex;
+  align-items: center;
   color: var(--text-light);
 }
 
@@ -509,7 +511,7 @@ main .container {
 }
 
 .work-card.expand-section {
-  height: 85%;
+  height: fit-content;
 }
 
 .work-info {
@@ -525,6 +527,7 @@ main .container {
   cursor: pointer;
   width: fit-content;
   line-height: 0;
+  text-align: right;
 }
 
 .work-info-description {
@@ -542,6 +545,14 @@ main .container {
 
 .view-less-icon.show {
   display: block;
+}
+
+.work-card.expand-section .work-info i {
+  flex-basis: 30%;
+}
+
+.work-card.expand-section .work-info-description p {
+  flex-basis: 70%;
 }
 
 footer {
