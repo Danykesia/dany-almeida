@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
 
+  <!-- AON -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -33,16 +36,17 @@
     </div>
   </header>
   <main>
+    <div id="grained"></div>
     <div class="container">
-      <div class="main-wrapper mt-3">
+      <div class="main-wrapper">
         <div class="headline mt-3">
-          <h1 class="text-xxl">
+          <h1 class="text-xxl text-xbold">
             Hey! My name is Daniele.
           </h1>
-          <p class="text-m mt-2">
+          <p class="text-m mt-2 text-light">
             I'm a Web Designer with +3 years of experience. My expertise is to design and develop websites and apps that your audience will love.
           </p>
-          <a href="#about" class="btn mt-3">Learn More</a>
+          <a href="#about" class="btn mt-3 text-medium">Learn More</a>
         </div>
         <div class="image">
           <img src="./img/daniele.png" alt="Daniele Almeida">
@@ -53,51 +57,69 @@
   <article id="services">
     <div class="container">
       <div class="services-wrapper">
-        <div class="services-card-wrapper">
+        <div class="services-card-wrapper" data-aos="fade-right" data-aos-duration="1200">
           <div class="services-card p-m">
             <div class="icon-wrapper">
               <img src="./icons/design.svg">
             </div>
-            <h3 class="text-s mt-2">Web & Mobile App Design</h3>
+            <h3 class="text-s mt-2 text-medium">Web & Mobile App Design</h3>
             <p class="text-xs mt-3">With a strong focus on modern platform guidelines and user needs, I can create unique web and mobile app designs.</p>
           </div>
           <div class="services-card p-m">
             <div class="icon-wrapper">
               <img src="./icons/shop.svg">
             </div>
-            <h3 class="text-s mt-2">E-commerce</h3>
+            <h3 class="text-s mt-2 text-medium">E-commerce</h3>
             <p class="text-xs mt-3">I design and develop the best e-commerce solution for your online store.</p>
           </div>
           <div class="services-card p-m">
             <div class="icon-wrapper">
               <img src="./icons/computer.svg">
             </div>
-            <h3 class="text-s mt-2">Web Development</h3>
+            <h3 class="text-s mt-2 text-medium">Web Development</h3>
             <p class="text-xs mt-3">I use HTML, CSS, JavaScript and Wordpress/Elementor to make modern and functional websites.</p>
           </div>
           <div class="services-card p-m">
             <div class="icon-wrapper">
               <img src="./icons/redesign.svg">
             </div>
-            <h3 class="text-s mt-2">Redesign Services</h3>
+            <h3 class="text-s mt-2 text-medium">Redesign Services</h3>
             <p class="text-xs mt-3">If you are dissatisfied with a previous project, I can improve the appearance of your website or mobile app.</p>
           </div>
         </div>
         <div class="services-info pl-3">
+          <p class="text-m mb-1 text-medium">Services</p>
           <h2 class="text-xl">How can I help you?</h2>
-          <p class="text-s mt-3">My goal is to make your business grow by designing and developing beautiful, modern, efficient, and responsive projects. Count on me to create your digital portfolio, blog, institutional website, virtual store, apps, and more.</p>
+          <p class="text-s mt-3 text-light">My goal is to make your business grow by designing and developing beautiful, modern, efficient, and responsive projects. Count on me to create your digital portfolio, blog, institutional website, virtual store, apps, and more.</p>
         </div>
       </div>
     </div>
   </article>
-  <article></article>
-  <article></article>
-  <article></article>
-  <article></article>
-  <article></article>
-  <article></article>
-  <footer></footer>
+
+  <!-- <footer></footer> -->
+
   <!-- Script -->
   <script src="js/script.js"></script>
+
+  <!-- Grained JS -->
+  <script src="js/grained.min.js"></script>
+  <script>
+    var options = {
+      animate: true,
+      patternWidth: 100,
+      patternHeight: 100,
+      grainOpacity: 0.05,
+      grainDensity: 1,
+      grainWidth: 1,
+      grainHeight: 1
+    };
+    grained('#grained', options)
+  </script>
+
+  <!-- AON -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
