@@ -4,7 +4,7 @@
   --text-light: #fff;
   --text-medium-dark: #47454e;
   --color-primary-x-dark: #272140;
-  --accent: #8BEAFF;
+  --accent: #8beaff;
   --color-primary-medium: #7650ea;
   --bg-light: #f3f0ff;
   --color-primary-dark: #5538ae;
@@ -239,22 +239,42 @@ nav ul {
   align-items: center;
 }
 
+nav li {
+  transition: all 0.4s;
+}
+
+nav li:hover {
+  transform: translateY(-3px);
+}
+
 nav a {
   color: var(--text-light);
   font-family: var(--font-secondary);
   font-size: var(--text-size-s);
   font-weight: 300;
+  transition: all 0.3s;
 }
 
 nav ul a {
   margin: 0 30px;
   position: relative;
+  transition: all .4s;
+}
+
+nav ul a:hover {
+  color: var(--accent);
 }
 
 .btn-contact {
-  background: rgba(255, 255, 255, 0.24);
+  background: linear-gradient(45deg, #f3f0f649, transparent);
   border-radius: 50px;
   padding: 8px 25px;
+  transition: all 0.5s;
+}
+
+.btn-contact:hover {
+  background: linear-gradient(45deg, #b9a7c5, transparent);
+  transform: translateY(-6px);
 }
 
 .btn {
@@ -272,7 +292,7 @@ main {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--color-primary-dark);
+  background-color: #735fb6;
   border-radius: 0 0 200px 0;
   display: flex;
   align-items: center;
@@ -469,7 +489,7 @@ main .container {
   background-position: center center;
   display: flex;
   flex-direction: column;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .arrow {
@@ -493,7 +513,7 @@ main .container {
 }
 
 .work-card {
-  background: linear-gradient(270deg, #6b3ef0 3.75%, #471EBB 105.56%);
+  background: linear-gradient(270deg, #6b3ef0 3.75%, #471ebb 105.56%);
   max-width: 100%;
   width: 100%;
   margin-top: auto;
