@@ -13,8 +13,7 @@ workArrowLeft.addEventListener('click', () => {
     direction = 1;
   };
 
-  workCarousel.style.justifyContent = 'flex-end'
-  console.log(direction)
+  workCarousel.style.justifyContent = 'flex-end';
   workSlider.style.transform = 'translate(16.66%)';
 });
 
@@ -24,7 +23,6 @@ workArrowRight.addEventListener('click', () => {
     direction = -1;
   }
   workCarousel.style.justifyContent = 'flex-start'
-  console.log(direction)
   workSlider.style.transform = 'translate(-16.66%)';
 });
 
@@ -44,25 +42,47 @@ workSlider.addEventListener('transitionend', () => {
 });
 
 // Expanded section
-const viewMore = document.querySelector('.view-more-icon');
-const viewLess = document.querySelector('.view-less-icon');
-const infoSection = document.querySelector('.work-card');
-const workDescription = document.querySelector('.work-info-description');
+const viewMore = document.querySelectorAll('.view-more-icon');
+const viewLess = document.querySelectorAll('.view-less-icon');
+const infoSection = document.querySelectorAll('.work-card');
+const workDescription = document.querySelectorAll('.work-info-description');
 
-viewMore.addEventListener('click', () => {
-  viewMore.classList.toggle('hide');
-  infoSection.classList.add('expand-section');
-  workDescription.style.display = "flex"
+viewMore.forEach(arrowMore => {
+  arrowMore.addEventListener('click', () => {
+    viewMore.forEach(arrowUp => {
+      arrowUp.classList.toggle('hide');
+    });
 
-  if (viewMore.classList.contains('hide')) {
-    viewLess.classList.add('show');
-    console.log('show')
-  }
-})
+    infoSection.forEach(info => {
+      info.classList.add('expand-section');
+    });
 
-viewLess.addEventListener('click', () => {
-  viewLess.classList.toggle('show');
-  infoSection.classList.remove('expand-section');
-  workDescription.style.display = "none";
-  viewMore.classList.remove('hide');
-})
+    workDescription.forEach(description => {
+      description.style.display = "flex";
+    });
+
+    viewLess.forEach(arrowLess => {
+      if (arrowMore.classList.contains('hide')) {
+        arrowLess.classList.add('show');
+      }
+    })
+  })
+});
+
+viewLess.forEach(arrowLess => {
+  arrowLess.addEventListener('click', () => {
+    arrowLess.classList.toggle('show');
+
+    infoSection.forEach(info => {
+      info.classList.remove('expand-section');
+    });
+
+    workDescription.forEach(description => {
+      description.style.display = "none";
+    })
+
+    viewMore.forEach(arrowMore => {
+      arrowMore.classList.remove('hide');
+    });
+  });
+});

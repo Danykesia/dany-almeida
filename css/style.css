@@ -514,32 +514,38 @@ main .container {
 
 .work-card {
   background: linear-gradient(270deg, #6b3ef0 3.75%, #471ebb 105.56%);
-  max-width: 100%;
   width: 100%;
   margin-top: auto;
-  height: 18vh;
+  color: var(--text-light);
+  padding: 35px 0 45px;
+  height: 20vh;
   display: flex;
   align-items: center;
-  color: var(--text-light);
 }
 
 .work-info-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .work-card.expand-section {
-  height: fit-content;
+  height: 100%;
 }
 
 .work-info {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   z-index: 1;
   position: relative;
+}
+
+.description .container {
+  padding: 0;
+  margin-top: 2rem;
 }
 
 .work-info i {
@@ -569,10 +575,6 @@ main .container {
 
 .work-card.expand-section .work-info i {
   flex-basis: 30%;
-}
-
-.work-card.expand-section .work-info-description p {
-  flex-basis: 70%;
 }
 
 footer {
