@@ -273,7 +273,7 @@ nav ul a:hover {
 }
 
 .btn-contact:hover {
-  background: linear-gradient(45deg, #b9a7c5, transparent);
+  background: linear-gradient(45deg, #b9a7c5bd, transparent);
   transform: translateY(-6px);
 }
 
