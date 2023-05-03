@@ -36,7 +36,7 @@
     </div>
   </header>
   <main>
-    <div id="grained"></div>
+    <div id="grainedBanner"></div>
     <div class="container">
       <div class="main-wrapper">
         <div class="headline mt-3">
@@ -95,7 +95,7 @@
       </div>
     </div>
   </article>
-  <article id="work" class="pt-3">
+  <article id="grainedWork" class="work pt-3">
     <h2 class="text-l mt-2 mb-3">My Work</h2>
     <div class="work-carousel">
       <div class="work-slider">
@@ -243,7 +243,17 @@
       grainWidth: 1,
       grainHeight: 1
     };
-    grained('#grained', options)
+    grained('#grainedBanner', options)
+    var options = {
+      animate: true,
+      patternWidth: 100,
+      patternHeight: 100,
+      grainOpacity: 0.05,
+      grainDensity: 1,
+      grainWidth: 1,
+      grainHeight: 1
+    };
+    grained('#grainedWork', options)
   </script>
 
   <!-- AON -->
