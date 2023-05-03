@@ -265,6 +265,7 @@ nav ul a {
   margin: 0 30px;
   position: relative;
   transition: all .4s;
+  cursor: pointer;
 }
 
 nav ul a:hover {
@@ -339,11 +340,17 @@ main .container {
 }
 
 .headline a {
-  color: var(--color-primary-x-dark);
+  color: var(--color-primary-dark);
   display: block;
   position: relative;
   box-shadow: 0px 4px 4px rgba(51, 6, 148, 0.34);
   letter-spacing: 1px;
+  transition: all .4s;
+}
+
+.headline a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 4px 20px rgba(157, 10, 174, 0.529);
 }
 
 #services {
