@@ -45,7 +45,7 @@ li {
 
 #grainedWork {
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .container {
@@ -500,7 +500,6 @@ main .container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: flex;
   flex-direction: column;
   margin-top: 0.5rem;
 }
@@ -530,7 +529,7 @@ main .container {
   width: 100%;
   margin-top: auto;
   color: var(--text-light);
-  padding: 35px 0 52px;
+  padding: 35px 0 42px;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -545,6 +544,7 @@ main .container {
 
 .work-card.expand-section {
   height: 100%;
+  padding-bottom: 60px;
 }
 
 .work-info {
