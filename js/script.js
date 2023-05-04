@@ -1,6 +1,12 @@
-document.querySelector('.toggle')
-        .addEventListener('click', function() {
+// NAVBAR MOBILE
+// Make navbar mobile shows and disappears.
+const btnToggle = document.querySelector('.toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+btnToggle.addEventListener('click', function () {
   this.classList.toggle('activate');
+  mobileNav.style.visibility = 'visible';
+  mobileNav.style.transition = 'transform .4s';
+  mobileNav.classList.toggle('show-nav');
 });
 
 // Infinity carousel
