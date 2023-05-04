@@ -1,88 +1,93 @@
+document.querySelector('.toggle')
+        .addEventListener('click', function() {
+  this.classList.toggle('activate');
+});
+
 // Infinity carousel
-const workSlider = document.querySelector('.work-slider');
-const workCarousel = document.querySelector('.work-carousel')
+// const workSlider = document.querySelector('.work-slider');
+// const workCarousel = document.querySelector('.work-carousel')
 
-const workArrowLeft = document.querySelector('#work-arrow-left');
-const workArrowRight = document.querySelector('#work-arrow-right');
+// const workArrowLeft = document.querySelector('#work-arrow-left');
+// const workArrowRight = document.querySelector('#work-arrow-right');
 
-let direction = -1;
+// let direction = -1;
 
-workArrowLeft.addEventListener('click', () => {
-  if (direction === -1) {
-    workSlider.appendChild(workSlider.firstElementChild);
-    direction = 1;
-  };
+// workArrowLeft.addEventListener('click', () => {
+//   if (direction === -1) {
+//     workSlider.appendChild(workSlider.firstElementChild);
+//     direction = 1;
+//   };
 
-  workCarousel.style.justifyContent = 'flex-end';
-  workSlider.style.transform = 'translate(16.66%)';
-});
+//   workCarousel.style.justifyContent = 'flex-end';
+//   workSlider.style.transform = 'translate(16.66%)';
+// });
 
-workArrowRight.addEventListener('click', () => {
-  if (direction === 1) {
-    workSlider.prepend(workSlider.lastElementChild);
-    direction = -1;
-  }
-  workCarousel.style.justifyContent = 'flex-start'
-  workSlider.style.transform = 'translate(-16.66%)';
-});
+// workArrowRight.addEventListener('click', () => {
+//   if (direction === 1) {
+//     workSlider.prepend(workSlider.lastElementChild);
+//     direction = -1;
+//   }
+//   workCarousel.style.justifyContent = 'flex-start'
+//   workSlider.style.transform = 'translate(-16.66%)';
+// });
 
-workSlider.addEventListener('transitionend', () => {
-  if (direction === -1) {
-    workSlider.appendChild(workSlider.firstElementChild);
-  } else if (direction === 1) {
-    workSlider.prepend(workSlider.lastElementChild);
-  }
+// workSlider.addEventListener('transitionend', () => {
+//   if (direction === -1) {
+//     workSlider.appendChild(workSlider.firstElementChild);
+//   } else if (direction === 1) {
+//     workSlider.prepend(workSlider.lastElementChild);
+//   }
 
-  workSlider.style.transition = 'none';
-  workSlider.style.transform = 'translate(0)';
+//   workSlider.style.transition = 'none';
+//   workSlider.style.transform = 'translate(0)';
 
-  setTimeout(() => {
-    workSlider.style.transition = 'all .5s';
-  });
-});
+//   setTimeout(() => {
+//     workSlider.style.transition = 'all .5s';
+//   });
+// });
 
-// Expanded section
-const viewMore = document.querySelectorAll('.view-more-icon');
-const viewLess = document.querySelectorAll('.view-less-icon');
-const infoSection = document.querySelectorAll('.work-card');
-const workDescription = document.querySelectorAll('.work-info-description');
+// // Expanded section
+// const viewMore = document.querySelectorAll('.view-more-icon');
+// const viewLess = document.querySelectorAll('.view-less-icon');
+// const infoSection = document.querySelectorAll('.work-card');
+// const workDescription = document.querySelectorAll('.work-info-description');
 
-viewMore.forEach(arrowMore => {
-  arrowMore.addEventListener('click', () => {
-    viewMore.forEach(arrowUp => {
-      arrowUp.classList.toggle('hide');
-    });
+// viewMore.forEach(arrowMore => {
+//   arrowMore.addEventListener('click', () => {
+//     viewMore.forEach(arrowUp => {
+//       arrowUp.classList.toggle('hide');
+//     });
 
-    infoSection.forEach(info => {
-      info.classList.add('expand-section');
-    });
+//     infoSection.forEach(info => {
+//       info.classList.add('expand-section');
+//     });
 
-    workDescription.forEach(description => {
-      description.style.display = "flex";
-    });
+//     workDescription.forEach(description => {
+//       description.style.display = "flex";
+//     });
 
-    viewLess.forEach(arrowLess => {
-      if (arrowMore.classList.contains('hide')) {
-        arrowLess.classList.add('show');
-      }
-    })
-  })
-});
+//     viewLess.forEach(arrowLess => {
+//       if (arrowMore.classList.contains('hide')) {
+//         arrowLess.classList.add('show');
+//       }
+//     })
+//   })
+// });
 
-viewLess.forEach(arrowLess => {
-  arrowLess.addEventListener('click', () => {
-    arrowLess.classList.toggle('show');
+// viewLess.forEach(arrowLess => {
+//   arrowLess.addEventListener('click', () => {
+//     arrowLess.classList.toggle('show');
 
-    infoSection.forEach(info => {
-      info.classList.remove('expand-section');
-    });
+//     infoSection.forEach(info => {
+//       info.classList.remove('expand-section');
+//     });
 
-    workDescription.forEach(description => {
-      description.style.display = "none";
-    })
+//     workDescription.forEach(description => {
+//       description.style.display = "none";
+//     })
 
-    viewMore.forEach(arrowMore => {
-      arrowMore.classList.remove('hide');
-    });
-  });
-});
+//     viewMore.forEach(arrowMore => {
+//       arrowMore.classList.remove('hide');
+//     });
+//   });
+// });
