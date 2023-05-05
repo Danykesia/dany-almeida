@@ -26,7 +26,7 @@ nav .desktop-nav {
   display: none;
 }
 
-nav img {
+nav .logo {
   width: 110px;
   position: relative;
   z-index: 1;
@@ -73,8 +73,8 @@ nav img {
 .toggle {
   cursor: pointer;
   overflow: hidden;
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   background: #e8beff76;
   border-radius: 10px;
   box-shadow: 0 3px 7px 0 #3906566d;
@@ -88,7 +88,7 @@ nav img {
 .line-toggle {
   position: absolute;
   display: block;
-  width: 34px;
+  width: 28px;
   height: 5px;
   background: var(--text-light);
   border-radius: 5px;
@@ -96,7 +96,7 @@ nav img {
 }
 
 .line-toggle:first-child {
-  transform: translateY(-10px) translateX(-4px);
+  transform: translateY(-10px) translateX(-2px);
   transition-delay: 0s;
   width: 26px;
 }
@@ -106,7 +106,7 @@ nav img {
 }
 
 .line-toggle:last-child {
-  transform: translateY(10px) translateX(-8px);
+  transform: translateY(10px) translateX(-6px);
   transition-delay: 0s;
   width: 18px;
 }
@@ -117,8 +117,8 @@ nav img {
   width: 30px;
   height: 5px;
   transition-delay: 0.1s;
-  left: 8px;
-  top: 20px;
+  left: 6px;
+  top: 18px;
 }
 
 .toggle.activate .line-toggle:nth-child(2) {
@@ -132,8 +132,8 @@ nav img {
   width: 30px;
   height: 5px;
   transition-delay: 0.1s;
-  left: 8px;
-  top: 20px;
+  left: 6px;
+  top: 18px;
 }
 
 .btn-contact {
