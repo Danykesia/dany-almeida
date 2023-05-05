@@ -43,7 +43,6 @@ nav img {
   -webkit-backdrop-filter: blur(6px) !important;
   backdrop-filter: blur(6px) !important;
   transform: translateX(-100%);
-  transition: transform 0.4s;
   visibility: hidden;
 }
 
