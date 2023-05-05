@@ -201,4 +201,8 @@ nav .logo {
   nav ul a {
     margin: 0 30px;
   }
+
+  .desktop-nav a {
+    margin: 0 30px;
+  }
 }
