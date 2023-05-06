@@ -39,12 +39,7 @@ main .container {
   padding-left: 50px;
 }
 
-.headline h1 {
-  font-size: var(--text-size-xxl);
-}
-
 .headline p {
-  font-size: var(--text-size-m);
   margin-top: 20px;
 }
 
@@ -133,11 +128,11 @@ main .container {
 
 @media (min-width: 860px) {
   .headline {
-    flex-basis: 50%;
+    flex-basis: 55%;
   }
 
   .banner-img {
-    flex-basis: 50%;
+    flex-basis: 45%;
   }
 
   main .container {
