@@ -1,5 +1,5 @@
 // NAVBAR MOBILE
-// Make navbar mobile shows and disappears.
+// Make navbar mobile appear and disappear.
 const btnToggle = document.querySelector('.toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 btnToggle.addEventListener('click', function () {
@@ -8,6 +8,12 @@ btnToggle.addEventListener('click', function () {
   mobileNav.style.transition = 'transform .4s';
   mobileNav.classList.toggle('show-nav');
 });
+
+//Make navbar background color change
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  header.classList.toggle('navbar-color', window.scrollY > 0)
+})
 
 // Infinity carousel
 // const workSlider = document.querySelector('.work-slider');

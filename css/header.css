@@ -3,7 +3,18 @@ header {
   align-items: center;
   background-color: transparent;
   z-index: 1000;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: all 0.6s;
+}
+
+header.navbar-color {
+  background-color: rgba(85, 56, 174, 0.795);
+  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px) !important;
 }
 
 nav {
