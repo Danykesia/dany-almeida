@@ -142,19 +142,21 @@ main .container {
 
 @media (min-width: 1024px) {
   main {
-    height: 96vh;
+    height: 650px;
   }
 
   .headline {
-    padding-left: 65px;
+    padding-left: 90px;
   }
 
   .headline::before {
     background-size: auto;
+    left: 25px;
   }
 
   .headline p {
     line-height: calc(var(--text-size-m) * 1.4);
+    width: 92%;
   }
 
   .banner-img img {
@@ -174,5 +176,6 @@ main .container {
 @media (min-width: 1440px) {
   main {
     justify-content: center;
+    height: 96vh;
   }
 }
