@@ -224,6 +224,17 @@ li {
   padding: 30px;
 }
 
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  width: 100%;
+  background-color: var(--color-primary-dark);
+  height: 350px;
+  border: 1px solid white;
+}
 footer {
   height: 10vh;
 }
