@@ -44,7 +44,7 @@ nav .logo {
 }
 
 .mobile-nav {
-  background-color: rgba(85, 56, 174, 0.682);
+  background-color: rgba(85, 56, 174, 0.795);
   padding: 120px 0;
   height: 100vh;
   width: 100%;
@@ -151,14 +151,6 @@ nav .logo {
   display: none;
 }
 
-.btn {
-  width: fit-content;
-  background-color: var(--accent);
-  border-radius: 50px;
-  padding: 12px 24px;
-  cursor: pointer;
-}
-
 @media (min-width: 920px) {
   .toggle {
     display: none;
@@ -190,16 +182,13 @@ nav .logo {
   }
 
   .desktop-nav a:hover {
-    color: var(--accent);
+    color: #8beaff;
   }
 
   .btn-contact {
-    display: block;
     background: linear-gradient(45deg, #f3f0f649, transparent);
-    border-radius: 50px;
     padding: 8px 25px;
-    transition: all 0.5s;
-    color: var(--text-light);
+    display: block;
   }
 
   .btn-contact:hover {
