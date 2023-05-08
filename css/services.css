@@ -7,6 +7,10 @@
   gap: 40px;
 }
 
+.services-info {
+  color: var(--text-dark);
+}
+
 .services-card-wrapper,
 .services-info {
   flex-basis: 50%;
