@@ -241,11 +241,68 @@ li {
 }
 
 .card {
+  display: flex;
+  transition: all 0.4s;
   width: 100%;
-  background-color: var(--color-primary-dark);
-  height: 350px;
-  border: 1px solid white;
+  position: relative;
 }
+
+.overlay {
+  position: absolute;
+  background-color: rgba(26, 14, 49, 0.8);
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay > * {
+  color: var(--text-light);
+  transform: translateY(30px);
+  transition: transform 0.6s;
+}
+
+.overlay:hover > * {
+  transform: translateY(0);
+}
+
+.overlay p {
+  font-size: 1.8rem;
+}
+
+.overlay i {
+  width: 48px;
+  height: 48px;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  background-color: rgba(81, 165, 204, 0.269);
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.overlay i:hover {
+  background-color: rgba(81, 165, 204, 0.633);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   height: 10vh;
 }
