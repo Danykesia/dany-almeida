@@ -186,13 +186,13 @@ nav .logo {
   }
 
   .btn-contact {
-    background: linear-gradient(45deg, #f3f0f649, transparent);
+    background-color: var(--color-primary-x-dark);
     padding: 8px 25px;
     display: block;
   }
 
   .btn-contact:hover {
-    background: linear-gradient(45deg, #b9a7c5bd, transparent);
+    background: #1a162c;
     transform: translateY(-6px);
   }
 }
