@@ -1,5 +1,7 @@
 #services {
   margin: 40px 0;
+  background: url(../icons/patterns.svg) no-repeat center;
+  background-size: contain;
 }
 
 .services-wrapper {
