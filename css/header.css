@@ -12,7 +12,7 @@ header {
 }
 
 header.navbar-color {
-  background-color: rgba(85, 56, 174, 0.795);
+  background-color: rgba(116, 13, 200, 0.8);
   -webkit-backdrop-filter: blur(6px) !important;
   backdrop-filter: blur(6px) !important;
 }
@@ -44,7 +44,7 @@ nav .logo {
 }
 
 .mobile-nav {
-  background-color: rgba(85, 56, 174, 0.795);
+  background-color: rgba(116, 13, 200, 0.8);
   padding: 120px 0;
   height: 100vh;
   width: 100%;
@@ -76,8 +76,8 @@ nav .logo {
 
 .mobile-nav a {
   padding: 20px;
-  background: rgba(90, 59, 174, 0.559);
-  border-bottom: 1px solid rgba(75, 42, 125, 0.351);
+  /* background: rgba(116, 13, 200, 0.8); */
+  border-bottom: 1px solid rgba(232, 203, 240, 0.143);
   display: block;
 }
 
@@ -186,13 +186,13 @@ nav .logo {
   }
 
   .btn-contact {
-    background-color: var(--color-primary-x-dark);
+    background-color: rgba(175, 164, 225, 0.231);
     padding: 8px 25px;
     display: block;
   }
 
   .btn-contact:hover {
-    background: #1a162c;
+    background: rgba(175, 164, 225, 0.524);
     transform: translateY(-6px);
   }
 }
