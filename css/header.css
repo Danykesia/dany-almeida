@@ -123,7 +123,7 @@ nav .logo {
 }
 
 .toggle.activate .line-toggle:first-child {
-  background: var(--color-primary-x-dark);
+  background: var(--primary-x-dark);
   transform: translateY(0) translateX(0) rotate(45deg);
   width: 30px;
   height: 5px;
@@ -138,7 +138,7 @@ nav .logo {
 }
 
 .toggle.activate .line-toggle:last-child {
-  background: var(--color-primary-x-dark);
+  background: var(--primary-x-dark);
   transform: translateY(0) translateX(0) rotate(314deg);
   width: 30px;
   height: 5px;

@@ -4,24 +4,26 @@
 @import url(./services.css);
 @import url(./work.css);
 @import url(./about.css);
+@import url(./contact.css);
 
 :root {
   --text-light: #fff;
-  --text-medium-dark: #47454e;
-  --text-dark: #242d42;
-  --color-primary-x-dark: #170128;
+  --text-gray: #47454e;
+  --text-dark: #221d2d;
+  --primary-x-dark: #170128;
+  --primary: #740dc8;
+  --primary-medium: #9045cd;
+  --primary-light: #d8ceff;
   --accent: #489abf;
-  --color-primary-medium: #9045cd;
+  --accent-dark: #1b4f67;
+  --accent-light: #ceebf9;
   --bg-light: #e7f1f5;
-  --color-primary-dark: #740dc8;
-  --color-primary-light: #d8ceff;
-  --color-accent-light: #ceebf9;
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Poppins", sans-serif;
   --text-size-xs: 1rem;
   --text-size-s: 1.125rem;
   --text-size-m: 1.25rem;
-  --text-size-l: 2.25rem;
+  --text-size-l: 2.5rem;
   --text-size-xl: 2.87rem;
   --text-size-xxl: 3.43rem;
 }
@@ -74,17 +76,17 @@ li {
 
 .text-xl {
   font-size: var(--text-size-xl);
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .text-l {
   font-size: var(--text-size-l);
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .text-m {
   font-size: var(--text-size-m);
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .text-s {
