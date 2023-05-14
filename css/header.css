@@ -193,7 +193,6 @@ nav .logo {
 
   .btn-contact:hover {
     background: rgba(175, 164, 225, 0.32);
-    transform: translateY(-6px);
   }
 }
 
