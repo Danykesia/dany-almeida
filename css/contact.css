@@ -146,6 +146,7 @@
   .contact-form h4 {
     font-size: var(--text-size-l);
     margin-bottom: 30px;
+    margin-top: 0;
   }
 
   .contact-form h4::after {
