@@ -13,4 +13,11 @@ btnToggle.addEventListener('click', function () {
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
   header.classList.toggle('navbar-color', window.scrollY > 0)
-})
+});
+
+// Current year
+let currentDate = document.getElementById('currentYear')
+let date = new Date;
+let year = date.getFullYear();
+
+currentDate.innerHTML = year;

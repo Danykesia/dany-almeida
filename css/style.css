@@ -256,6 +256,11 @@ li {
 
 footer {
   height: 10vh;
+  background-color: var(--primary-light);
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 920px) {
