@@ -22,10 +22,11 @@
   --font-secondary: "Poppins", sans-serif;
   --text-size-xs: 1rem;
   --text-size-s: 1.125rem;
-  --text-size-m: 1.25rem;
-  --text-size-l: 2.5rem;
-  --text-size-xl: 2.87rem;
-  --text-size-xxl: 3.43rem;
+  --text-size-m: 1.35rem;
+  --text-size-l: 2rem;
+  --text-size-xl: 2.85rem;
+  --text-size-xxl: 3rem;
+  --text-size-xxxl: 3.43rem;
 }
 
 * {
@@ -63,10 +64,20 @@ li {
   width: fit-content;
   cursor: pointer;
   position: relative;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-6px);
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-xxxl {
+  font-size: var(--text-size-xxxl);
+  line-height: 1.2;
 }
 
 .text-xxl {

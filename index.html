@@ -10,7 +10,7 @@
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
 
   <!-- AON -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -76,7 +76,7 @@
         <div class="services-info">
           <p class="text-m text-bold">Services</p>
           <h2 class="text-xl">How can I help you?</h2>
-          <p class="text-s mt-3 text-light">My goal is to make your business grow by designing and developing beautiful, modern, efficient, and responsive projects. Count on me to create your digital portfolio, blog, institutional website, virtual store, apps, and more.</p>
+          <p class="text-s mt-3 text-regular">My goal is to make your business grow by designing and developing beautiful, modern, efficient, and responsive projects. Count on me to create your digital portfolio, blog, institutional website, virtual store, apps, and more.</p>
         </div>
         <div class="services-card-wrapper" data-aos="fade-right" data-aos-duration="1200">
           <div class="services-card p-m">
@@ -188,7 +188,7 @@
             <p class="text-m text-bold">Know more</p>
             <h2 class="text-xxl">About </br>Me</h2>
           </div>
-          <p class="about-content text-s text-light">
+          <p class="about-content text-s text-regular">
             Hi! Welcome to my portfolio.</br></br>
             I'm a Web Designer who creates and develop modern, innovative, and practical user solutions.</br><br>
             I love working with Web Design because I like solving usability and user experience problems. Therefore, I always do my best to create unique and interactive platforms that add value to any business.
@@ -202,11 +202,28 @@
   </article>
   <article id="contact">
     <div class="container">
-      <div class="contact-title">
-        <h3 class="text-l">Let's chat.</br>
-          Tell me about your project.
-        </h2>
-        <p class="mt-2 text-m text-medium">Let's create something together!</p>
+      <div class="contact-header">
+        <h3 class="text-xl">Let's chat.</h3>
+        <h3 class="mt-1 text-xl">Tell me about your project.</h3>
+        <p class="mt-2 text-m text-medium">Let's create something </br>together!</p>
+      </div>
+      <div class="contact-form">
+        <h4 class="text-bold">Send me a message</h4>
+        <form action="" class="mt-2">
+          <div class="form-group">
+            <input type="text" id="name" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="name" class="form__label">Name</label>
+          </div>
+          <div class="mt-2 form-group">
+            <input type="email" id="email" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="email" class="form__label">Email</label>
+          </div>
+          <div class="mt-2 form-group">
+            <textarea class="form__input" id="message" cols="30" rows="6" placeholder=" "></textarea>
+            <label for="message" class="form__label">Message</label>
+          </div>
+          <button class="mt-2 btn">send</button>
+        </form>
       </div>
     </div>
   </article>
@@ -222,7 +239,7 @@
       animate: true,
       patternWidth: 100,
       patternHeight: 100,
-      grainOpacity: 0.07,
+      grainOpacity: 0.06,
       grainDensity: 1,
       grainWidth: 1,
       grainHeight: 1
