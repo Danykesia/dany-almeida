@@ -12,7 +12,7 @@ header {
 }
 
 header.navbar-color {
-  background-color: rgba(116, 13, 200, 0.8);
+  background-color: var(--primary);
   -webkit-backdrop-filter: blur(6px) !important;
   backdrop-filter: blur(6px) !important;
 }
@@ -26,7 +26,6 @@ nav {
 nav a {
   color: var(--text-light);
   font-family: var(--font-secondary);
-  font-size: var(--text-size-s);
   font-weight: 300;
   position: relative;
   transition: all 0.4s;
@@ -44,7 +43,7 @@ nav .logo {
 }
 
 .mobile-nav {
-  background-color: rgba(116, 13, 200, 0.8);
+  background-color: var(--primary);
   padding: 120px 0;
   height: 100vh;
   width: 100%;
@@ -72,13 +71,14 @@ nav .logo {
 .mobile-nav ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .mobile-nav a {
   padding: 20px;
-  /* background: rgba(116, 13, 200, 0.8); */
-  border-bottom: 1px solid rgba(232, 203, 240, 0.143);
   display: block;
+  font-size: var(--text-size-l);
+  border-bottom: 1px solid #dfbaff;
 }
 
 .toggle {
@@ -179,6 +179,7 @@ nav .logo {
 
   .desktop-nav a {
     margin: 0 10px;
+    font-size: var(--text-size-s);
   }
 
   .desktop-nav a:hover {
