@@ -255,7 +255,7 @@ li {
 }
 
 footer {
-  height: 10vh;
+  height: 8vh;
   background-color: var(--primary-light);
   color: var(--text-gray);
   display: flex;
