@@ -2,6 +2,8 @@
   height: 900px;
   width: 100vw;
   border-radius: 0 0 200px 0;
+  -webkit-border-radius: 0 0 200px 0;
+  -moz-border-radius: 0 0 200px 0;
 }
 
 main {
@@ -52,12 +54,11 @@ main .container {
   position: absolute;
   background-image: url(../icons/waving-hand.svg);
   background-repeat: no-repeat;
-  background-size: 35px;
-  width: 35px;
-  height: 35px;
+  background-size: 36px;
+  width: 40px;
+  height: 40px;
   left: 120px;
   top: 10px;
-  transform: scaleX(-1);
 }
 
 .headline .btn {
@@ -130,6 +131,11 @@ main .container {
     flex-basis: 60%;
   }
 
+  .headline::before {
+    left: 210px;
+    top: 67px;
+  }
+
   .banner-img {
     flex-basis: 40%;
   }
@@ -160,17 +166,17 @@ main .container {
   }
 
   main .container {
-    top: 100px;
+    top: 108px;
   }
 }
 
 @media (min-width: 1024px) {
   main {
-    height: 96vh;
+    height: 90vh;
   }
 
   #grainedBanner {
-    height: 96vh;
+    height: 90vh;
   }
 
   .headline {
@@ -182,7 +188,7 @@ main .container {
     width: 40px;
     height: 50px;
     left: 25px;
-    transform: scale(1);
+    top: 14px;
   }
 
   .headline h1 {

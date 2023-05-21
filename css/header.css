@@ -13,8 +13,6 @@ header {
 
 header.navbar-color {
   background-color: var(--primary);
-  -webkit-backdrop-filter: blur(6px) !important;
-  backdrop-filter: blur(6px) !important;
 }
 
 nav {
