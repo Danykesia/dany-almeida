@@ -207,6 +207,10 @@
     bottom: -12px;
     right: calc(100% - 476px);
   }
+
+  .services-card:hover {
+    transform: scale(1.06);
+  }
 }
 
 @media (min-width: 1200px) {
