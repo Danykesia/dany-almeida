@@ -34,10 +34,6 @@
   display: none;
 }
 
-.about p:first-child {
-  color: var(--primary);
-}
-
 .headline-wrapper h2 {
   position: relative;
   margin-top: 12px;

@@ -12,7 +12,7 @@
   --text-dark: #221d2d;
   --primary-x-dark: #170128;
   --primary: #330c4c;
-  --primary-medium: #622a86;
+  --primary-medium: #8233b2;
   --primary-light: #d8ceff;
   --accent: #489abf;
   --accent-dark: #1b4f67;
@@ -69,6 +69,13 @@ li {
 
 .btn:hover {
   transform: translateY(-6px);
+}
+
+.secondary-header {
+  color: var(--primary-medium);
+  font-weight: 600;
+  font-size: var(--text-size-m);
+  line-height: 1.2;
 }
 
 .text-center {

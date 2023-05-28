@@ -96,10 +96,6 @@
   justify-content: center;
 }
 
-.services-info p:first-child {
-  color: var(--primary);
-}
-
 .services-info h2 {
   position: relative;
   margin-top: 12px;
@@ -204,7 +200,7 @@
   }
 
   .services-info h2 {
-    margin-top: 0;
+    margin-top: 2px;
   }
 
   .services-info h2::after {
