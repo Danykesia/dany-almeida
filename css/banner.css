@@ -166,17 +166,17 @@ main .container {
   }
 
   main .container {
-    top: 108px;
+    top: 130px;
   }
 }
 
 @media (min-width: 1024px) {
   main {
-    height: 90vh;
+    height: 96vh;
   }
 
   #grainedBanner {
-    height: 90vh;
+    height: 96vh;
   }
 
   .headline {
