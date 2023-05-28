@@ -68,7 +68,7 @@
   font-size: var(--text-size-xs);
   font-family: inherit;
   font-weight: 400;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primary-medium);
   border-radius: 6px;
   background: none;
   transition: all 0.3s;
