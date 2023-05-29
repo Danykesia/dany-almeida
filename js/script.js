@@ -1,3 +1,22 @@
+// Scroll to top button
+// Make page go to top
+let scrollToTop = document.querySelector('#scrollToTop');
+
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+    scrollToTop.style.display = "flex";
+  } else {
+    scrollToTop.style.display = "none";
+  }
+}
+
+scrollToTop.addEventListener('click', () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})
+
 // NAVBAR MOBILE
 // Make navbar mobile appear and disappear.
 const btnToggle = document.querySelector('.toggle');

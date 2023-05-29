@@ -7,12 +7,12 @@
 
   #Radial {
     animation: points 1.8s linear infinite;
-    animation-delay: calc(1.8s / 4 * -6)
+    animation-delay: calc(1.8s / 4 * -2)
   }
 
   @keyframes points {
     0%, 100% {
-      opacity: 0.3
+      opacity: 0.3;
     }
 
     50% {
