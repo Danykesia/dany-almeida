@@ -62,7 +62,6 @@ main .container {
 }
 
 .headline .btn {
-  background-color: var(--accent);
   color: var(--color-light);
   letter-spacing: 1px;
   margin-top: 26px;

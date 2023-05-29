@@ -113,7 +113,6 @@
 }
 
 .contact-form .btn {
-  background-color: var(--accent);
   text-transform: uppercase;
   font-size: var(--text-size-xs);
   padding: 12px 34px;
