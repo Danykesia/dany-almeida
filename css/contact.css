@@ -24,7 +24,7 @@
   background-size: 28px;
   width: 28px;
   height: 28px;
-  right: calc(100% - 132px);
+  right: calc(100% - 120px);
   top: 24px;
 }
 
@@ -153,7 +153,7 @@
   }
 
   .contact-header > p:after {
-    right: calc(100% - 371px);
+    right: calc(100% - 345px);
     top: -2px;
   }
 }
