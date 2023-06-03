@@ -12,12 +12,12 @@
   color: var(--text-dark);
 }
 
-.contact-header p {
+.contact-header > p {
   position: relative;
   color: var(--accent-dark);
 }
 
-.contact-header p:after {
+.contact-header > p:after {
   content: "";
   position: absolute;
   background: url(../icons/smiley.svg) no-repeat;
@@ -118,12 +118,41 @@
   padding: 12px 34px;
 }
 
+.direct-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary-x-dark);
+}
+
+.direct-contact a {
+  color: var(--primary-x-dark);
+}
+
+.direct-contact a {
+  color: var(--primary-x-dark);
+  transition: all 0.3s;
+}
+
+.direct-contact a:hover {
+  color: var(--primary-medium);
+}
+
+.direct-contact i {
+  color: var(--primary-medium);
+}
+
+.direct-contact img {
+  width: 23px;
+  fill: var(--primary-medium);
+}
+
 @media (min-width: 500px) {
   .contact-header br {
     display: none;
   }
 
-  .contact-header p:after {
+  .contact-header > p:after {
     right: calc(100% - 371px);
     top: -2px;
   }
