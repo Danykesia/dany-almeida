@@ -17,6 +17,14 @@ scrollToTop.addEventListener('click', () => {
   document.documentElement.scrollTop = 0;
 })
 
+// Language dropdown
+let arrowDown = document.querySelector('.languages button');
+let hiddenFlag = document.querySelector('.language-hidden')
+
+arrowDown.addEventListener('click', () => {
+  hiddenFlag.classList.toggle('show')
+});
+
 // NAVBAR MOBILE
 // Make navbar mobile appear and disappear.
 const btnToggle = document.querySelector('.toggle');

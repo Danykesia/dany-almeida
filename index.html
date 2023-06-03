@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#330c4c">
-  <meta name="description" content="Web designer specializing in creating fast, modern and efficient websites and e-commerce. Responsive Websites · Blogs · Landing pages.">
+  <meta name="description" content="Web Designer specializing in creating fast, modern and efficient websites and e-commerce. Responsive Websites · Blogs · Landing pages.">
 
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
             <li><a href="#services">My Services</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Let's Talk</a></li>
           </ul>
         </div>
         <ul class="desktop-nav" aria-label="main">
@@ -50,12 +50,24 @@
           <img src="./icons/icon-neon.svg" alt="">
           <li><a href="#about">About Me</a></li>
         </ul>
-        <a href="#contact" class="text-s btn btn-contact">Let's Talk</a>
+        <div class="menu-right">
+          <a href="#contact" class="text-s btn btn-contact">Let's Talk</a>
+          <div class="languages">
+            <div class="language-active">
+              <img src="./icons/england.svg" alt="England flag" title="English">
+              <button title="Chose language">
+                <i class="material-icons">arrow_drop_down</i>
+              </button>
+            </div>
+            <div class="language-hidden">
+              <a href="/index-pt.html"><img src="./icons/brazil.svg" alt="Brazil flag"></a>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
   <main id="main">
-    <div id="grainedBanner"></div>
     <div class="container">
       <div class="main-wrapper">
         <div class="headline">
@@ -198,7 +210,7 @@
           </p>
         </div>
         <div class="memoji">
-          <img src="./img/daniele-memoji.png" alt="">
+          <img src="./img/daniele-memoji.png" alt="Daniele memoji">
         </div>
       </div>
     </div>
@@ -209,6 +221,16 @@
         <h3 class="text-xl">Let's chat.</h3>
         <h3 class="text-xl">Tell me about your project.</h3>
         <p class="mt-2 text-m text-medium">Let's create something </br>together!</p>
+        <div>
+          <div class="direct-contact mt-3">
+            <i class="material-icons">mail_outline</i>
+            <p>Mail me: <a href="mailto: danik.almeida31@gmail.com">danik.almeida31@gmail.com</a></p>
+          </div>
+          <div class="direct-contact mt-1">
+            <img src="./icons/whatsapp.svg" alt="whatsapp icon"></img>
+            <p>Message me: <a href="https://wa.me/351912037227">(+351) 912 037 227</a></p>
+          </div>
+        </div>
       </div>
       <div class="contact-form">
         <h4 class="text-bold">Send me a message</h4>
@@ -236,21 +258,6 @@
 
   <!-- Script -->
   <script src="js/script.js"></script>
-
-  <!-- Grained JS -->
-  <script src="js/grained.min.js"></script>
-  <script>
-    var options = {
-      animate: true,
-      patternWidth: 100,
-      patternHeight: 100,
-      grainOpacity: 0.06,
-      grainDensity: 1,
-      grainWidth: 1,
-      grainHeight: 1
-    };
-    grained('#grainedBanner', options);
-  </script>
 
   <!-- AON -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
