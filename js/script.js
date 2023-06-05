@@ -1,5 +1,4 @@
-// Scroll to top button
-// Make page go to top
+// Scroll to top button - Make page go to top
 let scrollToTop = document.querySelector('#scrollToTop');
 
 window.onscroll = function() { scrollFunction() };
@@ -17,13 +16,20 @@ scrollToTop.addEventListener('click', () => {
   document.documentElement.scrollTop = 0;
 })
 
-// Language dropdown
-let arrowDown = document.querySelector('.languages button');
-let hiddenFlag = document.querySelector('.language-hidden')
+// Language dropdown - Change language
+let arrowDown = document.querySelector('.btn-languages');
+let hiddenFlag = document.querySelector('.language-hidden');
+let body = document.querySelector('body');
 
 arrowDown.addEventListener('click', () => {
-  hiddenFlag.classList.toggle('show')
+  hiddenFlag.classList.toggle('show');
 });
+
+window.onclick = function(e){
+  if (!e.target.matches('.btn-languages') && hiddenFlag.classList.contains('show')) {
+    hiddenFlag.classList.remove('show');
+  }
+}
 
 // NAVBAR MOBILE
 // Make navbar mobile appear and disappear.
