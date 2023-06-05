@@ -1,0 +1,69 @@
+<svg width="530" height="857" viewBox="0 0 530 857" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  #points1 {
+    animation: points 3s linear infinite;
+    animation-delay: calc(2s / 4 * -1);
+  }
+
+  #elipse {
+    animation: points 2s linear infinite;
+    animation-delay: calc(5s / 4 * -2)
+  }
+
+  @keyframes points {
+    0%, 100% {
+      opacity: 0.3
+    }
+
+    50% {
+      opacity: .8;
+    }
+  }
+</style>
+<g id="elipse">
+<circle id="Ellipse 1645" cx="187.5" cy="179.5" r="18.5" stroke="#EADAF1" stroke-width="4"/>
+<circle id="Ellipse 1644" cx="515.5" cy="351.5" r="14.5" fill="#CCABDB"/>
+<rect id="Rectangle 148" x="50" y="828" width="26" height="27" stroke="#E1B6F4" stroke-width="4"/>
+<path id="Polygon 4" d="M477.902 7.27043C478.664 5.89808 480.637 5.89808 481.399 7.27043L496.254 34.0293C496.994 35.3623 496.03 37 494.506 37H464.796C463.271 37 462.307 35.3623 463.047 34.0293L477.902 7.27043Z" stroke="#C495DB" stroke-width="4"/>
+<g id="Group 112">
+<g id="points2">
+<circle id="Ellipse 1646" cx="5" cy="56" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1658" cx="24" cy="75" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1659" cx="43" cy="94" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1660" cx="62" cy="75" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1647" cx="81" cy="56" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1648" cx="62" cy="56" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1651" cx="81" cy="75" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1652" cx="81" cy="94" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1653" cx="62" cy="94" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1654" cx="43" cy="75" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1655" cx="24" cy="94" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1656" cx="5" cy="94" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1657" cx="5" cy="75" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1649" cx="43" cy="56" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1650" cx="24" cy="56" r="5" fill="#D6BAE3"/>
+</g>
+<path id="Vector 49" d="M87.5 39H99.5V52" stroke="#EADAF1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Group 113">
+<g id="points1">
+<circle id="Ellipse 1646_2" cx="284" cy="745" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1658_2" cx="303" cy="764" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1659_2" cx="322" cy="783" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1660_2" cx="341" cy="764" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1647_2" cx="360" cy="745" r="5" fill="#EADAF1"/>
+<circle id="Ellipse 1648_2" cx="341" cy="745" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1651_2" cx="360" cy="764" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1652_2" cx="360" cy="783" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1653_2" cx="341" cy="783" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1654_2" cx="322" cy="764" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1655_2" cx="303" cy="783" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1656_2" cx="284" cy="783" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1657_2" cx="284" cy="764" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1649_2" cx="322" cy="745" r="5" fill="#D6BAE3"/>
+<circle id="Ellipse 1650_2" cx="303" cy="745" r="5" fill="#D6BAE3"/>
+</g>
+<path id="Vector 49_2" d="M269.5 742.5L269.5 730.5L282.5 730.5" stroke="#EADAF1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
