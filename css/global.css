@@ -56,11 +56,6 @@ li {
   list-style: none;
 }
 
-#grainedWork {
-  height: 100%;
-  width: 100%;
-}
-
 #scrollToTop {
   position: fixed;
   bottom: 20px;
