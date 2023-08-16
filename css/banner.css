@@ -6,7 +6,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--primary);
-  border-radius: 0 0 280px 0;
+  border-radius: 0 0 204px 0;
   display: flex;
   align-items: center;
 }
@@ -127,6 +127,7 @@ main .container {
 @media (min-width: 800px) {
   main {
     height: 575px;
+    border-radius: 0 0 280px 0;
   }
 }
 

@@ -9,12 +9,12 @@
   gap: 28px;
 }
 
-.services-info {
+.services-info-english {
   color: var(--text-dark);
 }
 
 .services-card-wrapper,
-.services-info {
+.services-info-english {
   flex-basis: 50%;
 }
 
@@ -91,31 +91,41 @@
   background-color: var(--accent-light);
 }
 
-.services-info {
+.services-info-english,
+.services-info-portuguese {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.services-info h2 {
+.services-info-english h2,
+.services-info-portuguese h2 {
   position: relative;
   margin-top: 12px;
 }
 
-.services-info h2:after {
+.services-info-english h2:after,
+.services-info-portuguese h2:after {
   content: "";
   position: absolute;
   height: 100px;
   width: 100px;
   background: var(--accent-light);
-  right: calc(100% - 350px);
-  bottom: 38px;
   z-index: -1;
   border-radius: 0 0 0 54px;
+  bottom: 38px;
+}
+
+.services-info-english h2:after {
+  right: calc(100% - 350px);
+}
+
+.services-info-portuguese h2::after {
+  right: calc(100% - 395px);
 }
 
 @media (min-width: 485px) {
-  .services-info h2::after {
+  .services-info-english h2::after {
     right: calc(100% - 474px);
     bottom: -18px;
   }
@@ -180,11 +190,12 @@
     grid-area: boxes;
   }
 
-  .services-info {
+  .services-info-english,
+  .services-info-portuguese {
     grid-area: info;
   }
 
-  .services-info h2::after {
+  .services-info-english h2::after {
     right: calc(100% - 361px);
     bottom: 35px;
   }
@@ -196,17 +207,23 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .services-info {
+  .services-info-english,
+  .services-info-portuguese {
     padding-left: 20px;
   }
 
-  .services-info h2 {
+  .services-info-english h2,
+  .services-info-portuguese h2 {
     margin-top: 2px;
   }
 
-  .services-info h2::after {
-    bottom: -12px;
+  .services-info-portuguese h2::after {
+    bottom: 32px;
+  }
+
+  .services-info-english h2::after {
     right: calc(100% - 476px);
+    bottom: -12px;
   }
 
   .services-card:hover {
@@ -222,12 +239,21 @@
     margin-top: 0;
   }
 
-  .services-info h2 {
+  .services-info-english h2,
+  .services-info-portuguese h2 {
     max-width: 422px;
   }
 
-  .services-info h2::after {
+  .services-info-english h2::after,
+  .services-info-portuguese h2::after {
     bottom: 30px;
+  }
+
+  .services-info-portuguese h2::after {
+    right: calc(100% - 398px);
+  }
+
+  .services-info-english h2::after {
     right: calc(100% - 360px);
   }
 }

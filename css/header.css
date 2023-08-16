@@ -25,7 +25,6 @@ nav {
 }
 
 nav a {
-  color: var(--text-light);
   font-family: var(--font-secondary);
   font-weight: 300;
   position: relative;
@@ -156,6 +155,69 @@ nav .logo {
   display: none;
 }
 
+.mobile-right {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-right .languages button:hover {
+  background-color: #601d89;
+}
+
+.language-active {
+  display: flex;
+}
+
+.languages img {
+  width: 20px;
+}
+
+.languages {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.languages button {
+  cursor: pointer;
+  display: flex;
+  background-color: rgba(104, 60, 135, 0.522);
+  color: var(--primary-light);
+  border: none;
+  border-radius: 4px;
+}
+
+.language-m-hidden,
+.language-d-hidden {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.language-m-hidden {
+  top: 32px;
+}
+
+.language-d-hidden {
+  top: 25px;
+}
+
+.language-m-hidden img,
+.language-d-hidden img {
+  transition: all 0.4s;
+}
+
+.language-m-hidden img:hover,
+.language-d-hidden img:hover {
+  transform: scale(1.4);
+}
+
+.language-m-hidden.show,
+.language-d-hidden.show {
+  display: block;
+}
+
 @media (min-width: 920px) {
   .toggle {
     display: none;
@@ -208,43 +270,12 @@ nav .logo {
     gap: 10px;
   }
 
-  .menu-right img {
-    width: 20px;
-  }
-
-  .languages {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .languages button {
-    cursor: pointer;
-    display: flex;
-    background-color: rgba(104, 60, 135, 0.522);
-    color: var(--primary-light);
-    border: none;
-    border-radius: 4px;
-  }
-
-  .language-hidden {
+  .mobile-right .languages {
     display: none;
-    position: absolute;
-    top: 26px;
-    left: 0;
   }
 
-  .language-hidden img {
-    transition: all 0.4s;
-  }
-
-  .language-hidden img:hover {
-    transform: scale(1.4);
-  }
-
-  .language-hidden.show {
-    display: block;
+  .menu-right .languages button {
+    transition: all 0.3s;
   }
 }
 
