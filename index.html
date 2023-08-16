@@ -10,10 +10,7 @@
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
-
-  <!-- AON -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -24,15 +21,51 @@
   <button id="scrollToTop" title="go to top">
     <i class="material-icons">arrow_drop_up</i>
   </button>
+  <div class="modal">
+    <div class="modal-background">
+      <i class="close-modal material-icons">close</i>
+      <div class="modal-content">
+        <h1 class="text-l text-dark project-title"></h1>
+        <div class="project-images">
+          <img src="" alt="" class="project-image-header">
+          <div class="desktop-images">
+            <img src="" alt="" class="project-image1">
+            <img src="" alt="" class="project-image2">
+          </div>
+          <div class="mobile-images mb-3">
+            <img src="" alt="" class="project-image3">
+            <img src="" alt="" class="project-image4">
+            <img src="" alt="" class="project-image5">
+            <img src="" alt="" class="project-image6">
+            <img src="" alt="" class="project-image7">
+            <img src="" alt="" class="project-image8">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="container">
       <nav>
         <a href="#main"><img class="logo"  src="./img/logo.svg" alt="Logo"></a>
         <!-- Mobile toggle -->
-        <div class="toggle">
-          <span class="line-toggle"></span>
-          <span class="line-toggle"></span>
-          <span class="line-toggle"></span>
+        <div class="mobile-right">
+          <div class="languages">
+            <div class="language-active">
+              <img src="./icons/england.svg" alt="England flag" title="English">
+            </div>
+            <button title="Chose language">
+              <i class="btn-m-languages material-icons">arrow_drop_down</i>
+            </button>
+            <div class="language-m-hidden">
+              <a href="/index-pt.html"><img src="./icons/brazil.svg" alt="Brazil flag"></a>
+            </div>
+          </div>
+          <div class="toggle">
+            <span class="line-toggle"></span>
+            <span class="line-toggle"></span>
+            <span class="line-toggle"></span>
+          </div>
         </div>
         <!-- Mobile Navbar -->
         <div class="mobile-nav">
@@ -57,9 +90,9 @@
               <img src="./icons/england.svg" alt="England flag" title="English">
             </div>
             <button title="Chose language">
-              <i class="btn-languages material-icons">arrow_drop_down</i>
+              <i class="btn-d-languages material-icons">arrow_drop_down</i>
             </button>
-            <div class="language-hidden">
+            <div class="language-d-hidden">
               <a href="/index-pt.html"><img src="./icons/brazil.svg" alt="Brazil flag"></a>
             </div>
           </div>
@@ -71,7 +104,7 @@
     <div class="container">
       <div class="main-wrapper">
         <div class="headline">
-          <h1 class="text-xxbold">
+          <h1 class="text-bold">
             Hey! <br class="break-line">My name is Daniele.
           </h1>
           <p class="text-m text-light">
@@ -88,27 +121,27 @@
   <article id="services">
     <div class="container">
       <div class="services-wrapper">
-        <div class="services-info">
-          <p class="secondary-header">Services</p>
-          <h2 class="text-xl">How can I help you?</h2>
+        <div class="services-info-english">
+          <p class="secondary-header text-bold">Services</p>
+          <h2 class="text-xl text-bold">How can I help you?</h2>
           <p class="text-s mt-2 text-regular">My goal is to make your business grow by designing and developing beautiful, modern, efficient, and responsive projects. Count on me to create your digital portfolio, blog, institutional website, virtual store, apps, and more.</p>
         </div>
-        <div class="services-card-wrapper" data-aos="fade-right" data-aos-duration="1200">
-          <div class="services-card p-m">
+        <div class="services-card-wrapper scroll-right">
+          <div class="services-card">
             <div class="icon-wrapper">
               <img src="./icons/design.svg" alt="">
             </div>
             <h3 class="text-s mt-2 text-medium">Web & Mobile App Design</h3>
             <p class="text-xs mt-3">With a strong focus on modern platform guidelines and user needs, I can create unique web and mobile app designs.</p>
           </div>
-          <div class="services-card p-m">
+          <div class="services-card">
             <div class="icon-wrapper">
               <img src="./icons/shop.svg" alt="">
             </div>
             <h3 class="text-s mt-2 text-medium">E-commerce</h3>
             <p class="text-xs mt-3">I design and develop the best e-commerce solution for your online store.</p>
           </div>
-          <div class="services-card p-m">
+          <div class="services-card">
             <div class="icon-wrapper">
               <img class="computer1" src="./icons/computer1.svg" alt="">
               <img class="computer2" src="./icons/computer2.svg" alt="">
@@ -116,7 +149,7 @@
             <h3 class="text-s mt-2 text-medium">Web Development</h3>
             <p class="text-xs mt-3">I use HTML, CSS, JavaScript and Wordpress/Elementor to make modern and functional websites.</p>
           </div>
-          <div class="services-card p-m">
+          <div class="services-card">
             <div class="icon-wrapper">
               <img class="redesign1" src="./icons/redesign1.svg" alt="">
               <img class="redesign2" src="./icons/redesign2.svg" alt="">
@@ -131,83 +164,83 @@
   <article id="work">
     <div class="portfolio-wrapper">
       <div class="card">
-        <img src="./img/motionStudio.jpg" alt="Motion Studio">
+        <img src="./img/projects/sesmt/sesmt-home.webp" alt="SESMT Digital">
         <div class="overlay">
-          <p class="text-medium">Motion Studio</p>
-          <i class="material-icons">search</i>
+          <p class="text-medium">SESMT Digital</p>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/amplaMais.jpg" alt="Ampla +">
+        <img src="./img/projects/ampla-mais/ampla-home.webp" alt="Ampla +">
         <div class="overlay">
           <p class="text-medium">Ampla +</p>
-          <i class="material-icons">search</i>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/fazBemPet.jpg" alt="Faz Bem Pet">
+        <img src="./img/projects/lh-homeopatia/lh-homeopatia-home.webp" alt="LH Homeopatia">
         <div class="overlay">
-          <p class="text-medium">Faz Bem Pet</p>
-          <i class="material-icons">search</i>
+          <p class="text-medium">LH Homeopatia</p>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/alessandraVieira.jpg" alt="Alessandra Vieira">
-        <div class="overlay">
-          <p class="text-medium">Alessandra Vieira</p>
-          <i class="material-icons">search</i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./img/kellyNiglio.jpg" alt="Kelly Niglio">
+        <img src="./img/projects/kelly/kelly-home.webp" alt="Alessandra Vieira">
         <div class="overlay">
           <p class="text-medium">Kelly Niglio</p>
-          <i class="material-icons">search</i>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/dlDoces.jpg" alt="DL Doces">
+        <img src="./img/projects/b4s-adv/b4s-adv-home.webp" alt="B4S Marketing Digital - Landing Page Advocacia">
         <div class="overlay">
-          <p class="text-medium">DL Doces</p>
-          <i class="material-icons">search</i>
+          <p class="text-medium">B4S Marketing Digital - Landing Page Advocacia</p>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/sohoHair.jpg" alt="Soho Hair">
+        <img src="./img/projects/motion/motion-home.webp" alt="Motion Studio">
+        <div class="overlay">
+          <p class="text-medium">Motion Studio</p>
+          <i class="material-icons">visibility</i>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/projects/soho/soho-home.webp" alt="Soho Hair">
         <div class="overlay">
           <p class="text-medium">Soho Hair</p>
-          <i class="material-icons">search</i>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/drCaramelo.jpg" alt="Dr. Caramelo">
+        <img src="./img/projects/dr-caramelo/drcaramelo-home.webp" alt="Dr. Caramelo">
         <div class="overlay">
           <p class="text-medium">Dr. Caramelo</p>
-          <i class="material-icons">search</i>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
       <div class="card">
-        <img src="./img/geradorCurriculum.jpg" alt="Gerador Curriculum">
+        <img src="./img/projects/b4s-solar/b4s-solar-home.webp" alt="B4S Marketing Digital - Landing Page Energia Solar">
         <div class="overlay">
-          <p class="text-medium">Gerador Curriculum</p>
-          <i class="material-icons">search</i>
+          <p class="text-medium">B4S Marketing Digital - Landing Page Energia Solar</p>
+          <i class="material-icons">visibility</i>
         </div>
       </div>
     </div>
   </article>
   <article id="about">
     <div class="container">
-      <div class="about-wrapper" data-aos="fade-right" data-aos-duration="1200">
+      <div class="about-wrapper scroll-right">
         <div class="about">
           <div class="headline-wrapper">
-            <p class="secondary-header">Know more</p>
+            <p class="secondary-header text-bold">Know more</p>
             <h2 class="text-xxl">About </br>Me</h2>
           </div>
-          <p class="about-content text-s text-regular">
-            Hi! Welcome to my portfolio.</br></br>
-            I'm a Web Designer who creates and develop modern, innovative, and practical user solutions.</br><br>
-            I love working with Web Design because I like solving usability and user experience problems. Therefore, I always do my best to create unique and interactive platforms that add value to any business.
-          </p>
+          <div class="about-content">
+            <p class="text-s text-regular">Hi! Welcome to my portfolio.</p>
+            <p class="mt-1 text-s text-regular">I'm a Web Designer who creates and develop modern, innovative, and practical user solutions.</p>
+            <p class="mt-1 text-s text-regular">I love working with Web Design because I like solving usability and user experience problems. Therefore, I always do my best to create unique and interactive platforms that add value to any business.</p>
+          </div>
         </div>
         <div class="memoji">
           <img src="./img/daniele-memoji.png" alt="Daniele memoji">
@@ -217,12 +250,12 @@
   </article>
   <article id="contact">
     <div class="container">
-      <div class="contact-header">
+      <div class="contact-header-english">
         <h3 class="text-xl">Let's chat.</h3>
         <h3 class="text-xl">Tell me about your project.</h3>
         <p class="mt-2 text-m text-medium">Let's create something </br>together!</p>
         <div>
-          <div class="direct-contact mt-3">
+          <div class="direct-contact mt-2">
             <i class="material-icons">mail_outline</i>
             <p>Mail me: <a href="mailto: danik.almeida31@gmail.com">danik.almeida31@gmail.com</a></p>
           </div>
@@ -232,22 +265,22 @@
           </div>
         </div>
       </div>
-      <div class="contact-form">
+      <div class="contact-form-english">
         <h4 class="text-bold">Send me a message</h4>
-        <form action="" class="mt-2">
+        <form action="">
           <div class="form-group">
             <input type="text" id="name" class="form__input" autocomplete="off" placeholder=" ">
             <label for="name" class="form__label">Name</label>
           </div>
-          <div class="mt-2 form-group">
+          <div class="form-group">
             <input type="email" id="email" class="form__input" autocomplete="off" placeholder=" ">
             <label for="email" class="form__label">Email</label>
           </div>
-          <div class="mt-2 form-group">
+          <div class="form-group">
             <textarea class="form__input" id="message" cols="30" rows="6" placeholder=" "></textarea>
             <label for="message" class="form__label">Message</label>
           </div>
-          <button class="mt-2 btn btn-gradient">send</button>
+          <button class="btn btn-gradient">send</button>
         </form>
       </div>
     </div>
@@ -258,11 +291,5 @@
 
   <!-- Script -->
   <script src="js/script.js"></script>
-
-  <!-- AON -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
