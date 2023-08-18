@@ -181,6 +181,14 @@
   fill: var(--primary-medium);
 }
 
+.contact-header-english > p:after {
+  right: calc(100% - 126px);
+}
+
+.contact-header-portuguese > p:after {
+  right: calc(100% - 102px);
+}
+
 @media (min-width: 500px) {
   .contact-header-english br,
   .contact-header-portuguese br {
@@ -191,14 +199,14 @@
   .contact-header-portuguese > p:after {
     top: -2px;
   }
-}
 
-.contact-header-english > p:after {
-  right: calc(100% - 358px);
-}
+  .contact-header-english > p:after {
+    right: calc(100% - 360px);
+  }
 
-.contact-header-portuguese > p:after {
-  right: calc(100% - 280px);
+  .contact-header-portuguese > p:after {
+    right: calc(100% - 280px);
+  }
 }
 
 @media (min-width: 900px) {

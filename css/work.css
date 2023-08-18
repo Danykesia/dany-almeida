@@ -35,7 +35,8 @@
   text-align: center;
 }
 
-.card:hover .overlay {
+.card:hover .overlay,
+.card.overlay {
   opacity: 1;
 }
 
