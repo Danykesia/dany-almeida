@@ -75,6 +75,14 @@ const projectImg5 = document.querySelector('.project-image5');
 const projectImg6 = document.querySelector('.project-image6');
 const projectImg7 = document.querySelector('.project-image7');
 const projectImg8 = document.querySelector('.project-image8');
+const projectImg9 = document.querySelector('.project-image9');
+const projectImg10 = document.querySelector('.project-image10');
+const projectImg11 = document.querySelector('.project-image11');
+const projectImg12 = document.querySelector('.project-image12');
+const projectImg13 = document.querySelector('.project-image13');
+const projectImg14 = document.querySelector('.project-image14');
+const projectImg15 = document.querySelector('.project-image15');
+const projectImg16 = document.querySelector('.project-image16');
 
 closeModal.addEventListener('click', () => {
   modal.classList.remove('show');
@@ -98,64 +106,163 @@ projectDetailsBtn.forEach((button, index) => {
     body.style.overflow = 'hidden';
 
     if (index === 0) {
-      projectDetails('Motion Studio', './img/motion-header-img.webp');
-      projectImg1.src = './img/motion-dk-1.webp';
-      projectImg2.src = './img/motion-dk-2.webp';
-      projectImg3.src = './img/motion-mobile-1.webp';
-      projectImg4.src = './img/motion-mobile-2.webp';
-      projectImg5.src = './img/motion-mobile-3.webp';
-      projectImg6.src = './img/motion-mobile-4.webp';
-      projectImg7.src = './img/motion-mobile-5.webp';
-      projectImg8.src = './img/motion-mobile-6.webp';
+      projectDetails('SESMT Digital', './img/projects/sesmt/sesmt-header-img.webp');
+      projectImg1.src = './img/projects/sesmt/sesmt-dsk-1.webp';
+      projectImg2.src = './img/projects/sesmt/sesmt-dsk-2.webp';
+      projectImg3.src = './img/projects/sesmt/sesmt-mobile-1.webp';
+      projectImg4.src = './img/projects/sesmt/sesmt-mobile-2.webp';
+      projectImg5.src = './img/projects/sesmt/sesmt-mobile-3.webp';
+      projectImg6.src = './img/projects/sesmt/sesmt-mobile-4.webp';
+      projectImg7.src = './img/projects/sesmt/sesmt-mobile-5.webp';
+      projectImg8.src = './img/projects/sesmt/sesmt-mobile-6.webp';
+      projectImg9.src = './img/projects/sesmt/sesmt-mobile-7.webp';
+      projectImg10.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
     if (index === 1) {
-      projectDetails('Ampla Mais')
+      projectDetails('Ampla +', './img/projects/ampla-mais/amplamais-header.webp');
+      projectImg1.src = './img/projects/ampla-mais/ampla-dsk-1.webp';
+      projectImg2.src = './img/projects/ampla-mais/ampla-dsk-2.webp';
+      projectImg3.src = './img/projects/ampla-mais/ampla-mobile-1.webp';
+      projectImg4.src = './img/projects/ampla-mais/ampla-mobile-2.webp';
+      projectImg5.src = './img/projects/ampla-mais/ampla-mobile-3.webp';
+      projectImg6.src = './img/projects/ampla-mais/ampla-mobile-4.webp';
+      projectImg7.src = './img/projects/ampla-mais/ampla-mobile-5.webp';
+      projectImg8.src = './img/projects/ampla-mais/ampla-mobile-6.webp';
+      projectImg9.src = './img/projects/ampla-mais/ampla-mobile-7.webp';
+      projectImg10.src = './img/projects/ampla-mais/ampla-mobile-8.webp';
+      projectImg11.src = './img/projects/ampla-mais/ampla-mobile-9.webp';
     }
     if (index === 2) {
-      projectDetails('Faz Bem Pet')
+      projectDetails('LH Homeopatia', './img/projects/lh-homeopatia/lh-homeopatia-header-img.webp')
+      projectImg1.src = './img/projects/lh-homeopatia/lh-homeopatia-dsk-1.webp';
+      projectImg2.src = './img/projects/lh-homeopatia/lh-homeopatia-dsk-2.webp';
+      projectImg3.src = './img/projects/lh-homeopatia/lh-homeopatia-mobile-1.webp';
+      projectImg4.src = './img/projects/lh-homeopatia/lh-homeopatia-mobile-2.webp';
+      projectImg5.src = './img/projects/lh-homeopatia/lh-homeopatia-mobile-3.webp';
+      projectImg6.src = './img/projects/lh-homeopatia/lh-homeopatia-mobile-4.webp';
+      projectImg7.src = './img/projects/lh-homeopatia/lh-homeopatia-mobile-5.webp';
+      projectImg8.src = './img/projects/lh-homeopatia/lh-homeopatia-mobile-6.webp';
+      projectImg9.style.display = 'none';
+      projectImg10.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
     if (index === 3) {
-      projectDetails('Alessandra Vieira')
+      projectDetails('Kelly Niglio', './img/projects/kelly/kelly-header.webp');
+      projectImg1.src = './img/projects/kelly/kelly-dsk-1.webp';
+      projectImg2.src = './img/projects/kelly/kelly-dsk-2.webp';
+      projectImg12.src = './img/projects/kelly/kelly-dsk-3.webp';
+      projectImg13.src = './img/projects/kelly/kelly-dsk-4.webp';
+      projectImg3.src = './img/projects/kelly/kelly-mobile-1.webp';
+      projectImg4.src = './img/projects/kelly/kelly-mobile-2.webp';
+      projectImg5.src = './img/projects/kelly/kelly-mobile-3.webp';
+      projectImg6.src = './img/projects/kelly/kelly-mobile-4.webp';
+      projectImg7.src = './img/projects/kelly/kelly-mobile-5.webp';
+      projectImg8.src = './img/projects/kelly/kelly-mobile-6.webp';
+      projectImg9.src = './img/projects/kelly/kelly-mobile-7.webp';
+      projectImg8.src = './img/projects/kelly/kelly-mobile-8.webp';
+      projectImg9.src = './img/projects/kelly/kelly-mobile-9.webp';
+      projectImg10.src = './img/projects/kelly/kelly-mobile-10.webp';
+      projectImg11.src = './img/projects/kelly/kelly-mobile-11.webp';
+      projectImg14.src = './img/projects/kelly/kelly-mobile-12.webp';
+      projectImg15.src = './img/projects/kelly/kelly-mobile-13.webp';
+      projectImg16.src = './img/projects/kelly/kelly-mobile-14.webp';
     }
     if (index === 4) {
-      projectDetails('Kelly Niglio')
+      projectDetails('B4S Marketing Digital - Landing Page Advocacia', './img/projects/b4s-adv/b4s-adv-header-img.webp');
+      projectImg1.src = './img/projects/b4s-adv/b4s-adv-dsk-1.webp';
+      projectImg2.src = './img/projects/b4s-adv/b4s-adv-dsk-2.webp';
+      projectImg3.src = './img/projects/b4s-adv/b4s-adv-mobile-1.webp';
+      projectImg4.src = './img/projects/b4s-adv/b4s-adv-mobile-2.webp';
+      projectImg5.src = './img/projects/b4s-adv/b4s-adv-mobile-3.webp';
+      projectImg6.src = './img/projects/b4s-adv/b4s-adv-mobile-4.webp';
+      projectImg7.src = './img/projects/b4s-adv/b4s-adv-mobile-5.webp';
+      projectImg8.src = './img/projects/b4s-adv/b4s-adv-mobile-6.webp';
+      projectImg9.src = './img/projects/b4s-adv/b4s-adv-mobile-7.webp';
+      projectImg10.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
     if (index === 5) {
-      projectDetails('DL Doces')
+      projectDetails('Motion Studio', './img/projects/motion/motion-header-img.webp');
+      projectImg1.src = './img/projects/motion/motion-dsk-1.webp';
+      projectImg2.src = './img/projects/motion/motion-dsk-2.webp';
+      projectImg3.src = './img/projects/motion/motion-mobile-1.webp';
+      projectImg4.src = './img/projects/motion/motion-mobile-2.webp';
+      projectImg5.src = './img/projects/motion/motion-mobile-3.webp';
+      projectImg6.src = './img/projects/motion/motion-mobile-4.webp';
+      projectImg7.src = './img/projects/motion/motion-mobile-5.webp';
+      projectImg8.src = './img/projects/motion/motion-mobile-6.webp';
+      projectImg9.style.display = 'none';
+      projectImg10.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
     if (index === 6) {
-      projectDetails('Soho Hair')
+      projectDetails('Soho Hair', './img/projects/soho/soho-header-img.webp');
+      projectImg1.src = './img/projects/soho/soho-dsk-1.webp';
+      projectImg2.src = './img/projects/soho/soho-dsk-2.webp';
+      projectImg12.src = './img/projects/soho/soho-dsk-3.webp';
+      projectImg13.style.display = 'none';
+      projectImg3.src = './img/projects/soho/soho-mobile-1.webp';
+      projectImg4.src = './img/projects/soho/soho-mobile-2.webp';
+      projectImg5.src = './img/projects/soho/soho-mobile-3.webp';
+      projectImg6.src = './img/projects/soho/soho-mobile-4.webp';
+      projectImg7.src = './img/projects/soho/soho-mobile-5.webp';
+      projectImg8.src = './img/projects/soho/soho-mobile-6.webp';
+      projectImg9.src = './img/projects/soho/soho-mobile-7.webp';
+      projectImg10.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
     if (index === 7) {
-      projectDetails('Dr. Caramelo')
+      projectDetails('Dr. Caramelo', './img/projects/drcaramelo/drcaramelo-header-img.webp');
+      projectImg1.src = './img/projects/drcaramelo/drcaramelo-dsk-1.webp';
+      projectImg2.src = './img/projects/drcaramelo/drcaramelo-dsk-2.webp';
+      projectImg3.src = './img/projects/drcaramelo/drcaramelo-mobile-1.webp';
+      projectImg4.src = './img/projects/drcaramelo/drcaramelo-mobile-2.webp';
+      projectImg5.src = './img/projects/drcaramelo/drcaramelo-mobile-3.webp';
+      projectImg6.src = './img/projects/drcaramelo/drcaramelo-mobile-4.webp';
+      projectImg7.src = './img/projects/drcaramelo/drcaramelo-mobile-5.webp';
+      projectImg8.src = './img/projects/drcaramelo/drcaramelo-mobile-6.webp';
+      projectImg9.style.display = 'none';
+      projectImg10.style.display = 'none';
+      projectImg11.style.display = 'none';
+      projectImg12.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
     if (index === 8) {
-      projectDetails('Gerador Curriculum')
+      projectDetails('B4S Marketing Digital - Landing Page Energia Solar', './img/projects/b4s-solar/b4s-solar-header-img.webp');
+      projectImg1.src = './img/projects/b4s-solar/b4s-solar-dsk-1.webp';
+      projectImg2.src = './img/projects/b4s-solar/b4s-solar-dsk-2.webp';
+      projectImg3.src = './img/projects/b4s-solar/b4s-solar-mobile-1.webp';
+      projectImg4.src = './img/projects/b4s-solar/b4s-solar-mobile-2.webp';
+      projectImg5.src = './img/projects/b4s-solar/b4s-solar-mobile-3.webp';
+      projectImg6.src = './img/projects/b4s-solar/b4s-solar-mobile-4.webp';
+      projectImg7.src = './img/projects/b4s-solar/b4s-solar-mobile-5.webp';
+      projectImg8.src = './img/projects/b4s-solar/b4s-solar-mobile-6.webp';
+      projectImg9.src = './img/projects/b4s-solar/b4s-solar-mobile-7.webp';
+      projectImg10.src = './img/projects/b4s-solar/b4s-solar-mobile-8.webp';
+      projectImg11.style.display = 'none';
+      projectImg14.style.display = 'none';
+      projectImg15.style.display = 'none';
+      projectImg16.style.display = 'none';
     }
-
-    // const project = index
-
-    // switch(project) {
-    //   case index === 0:
-    //     modalContent.innerHTML = 'motion';
-    //   case 1:
-    //     modalContent.innerHTML = 'alpha';
-    //   case 2:
-    //   modalContent.innerHTML = 'faz bem pet';
-    //   case 3:
-    //     modalContent.innerHTML = 'alessandra';
-    //   case 4:
-    //   modalContent.innerHTML = 'kelly';
-    //   case 5:
-    //   modalContent.innerHTML = 'dl doces';
-    //   case 6:
-    //   modalContent.innerHTML = 'soho';
-    //   case 7:
-    //     modalContent.innerHTML = 'dr caramelo';
-    //   case 8:
-    //   modalContent.innerHTML = 'curriculum';
-    //   break;
-    // }
   });
 });
 
@@ -173,4 +280,14 @@ function fadeScroll() {
     }
   })
 }
-window.addEventListener('scroll', fadeScroll)
+window.addEventListener('scroll', fadeScroll);
+
+// Show overlay on mobile devices
+const cardProjects = document.querySelectorAll('.portfolio-wrapper .card');
+const cardOverlay = document.querySelector('.overlay');
+
+cardProjects.forEach(card => {
+  card.addEventListener('click', () => {
+    cardOverlay.classList.add('show')
+  });
+});
