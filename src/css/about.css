@@ -13,7 +13,7 @@
 #about .container:after {
   content: "";
   position: absolute;
-  background-image: url(../icons/patter-left.svg);
+  background-image: url(/icons/patter-left.svg);
   background-repeat: no-repeat;
   background-size: 443px 412px;
   width: 100%;

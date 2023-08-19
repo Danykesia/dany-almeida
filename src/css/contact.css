@@ -23,7 +23,7 @@
 .contact-header-portuguese > p:after {
   content: "";
   position: absolute;
-  background: url(../icons/smiley.svg) no-repeat;
+  background: url(/icons/smiley.svg) no-repeat;
   background-size: 28px;
   width: 28px;
   height: 28px;
@@ -67,7 +67,7 @@
 .contact-form-portuguese h4::after {
   content: "";
   position: absolute;
-  background: url(../icons/rocket.svg) no-repeat;
+  background: url(/icons/rocket.svg) no-repeat;
   background-size: 28px;
   width: 28px;
   height: 28px;
