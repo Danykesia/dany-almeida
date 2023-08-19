@@ -1,0 +1,14 @@
+{
+  "name": "dany-almeida",
+  "version": "1.0.0",
+  "description": "This is my website as a Web Designer freelancer.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
+}
