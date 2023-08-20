@@ -57,6 +57,10 @@ window.onclick = function(e){
   if (!e.target.matches('.btn-m-languages') && hiddenMobileFlag.classList.contains('show')) {
     hiddenMobileFlag.classList.remove('show');
   }
+
+  if (!e.target.matches('.btn-d-languages') && hiddenDesktopFlag.classList.contains('show')) {
+    hiddenDesktopFlag.classList.remove('show');
+  }
 }
 
 // NAVBAR MOBILE
@@ -84,7 +88,6 @@ let year = date.getFullYear();
 currentDate.innerHTML = year;
 
 // Modal
-const projectDetailsBtn = document.querySelectorAll('.overlay .material-icons');
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.close-modal');
 
