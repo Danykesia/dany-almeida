@@ -121,18 +121,6 @@ function renderProjectDetails(details) {
   });
 }
 
-// projectDetailsBtn.forEach((button, index) => {
-//   button.addEventListener('click', () => {
-//     modal.classList.toggle('show');
-//     if(window.scrollY < 800) {
-//       body.style.overflow = 'auto';
-//     }
-//     body.style.overflow = 'hidden';
-
-//     renderProjectDetails(projectDetails[index]);
-//   });
-// });
-
 const elements = document.querySelectorAll('.scroll-right, .fade')
 const scrollPosition = window.innerHeight * 0.7;
 
