@@ -105,7 +105,7 @@ function renderProjectDetails(details) {
 
   // set the details
   projectTitle.innerHTML = details.title
-  imageHeader.src = details.imageHeader;
+  imageHeader.src = details.imgHeader;
   
   details.desktopImages.forEach(imageSrc => {
     const imageElement = document.createElement('img');
