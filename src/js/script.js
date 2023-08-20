@@ -91,8 +91,6 @@ const closeModal = document.querySelector('.close-modal');
 closeModal.addEventListener('click', () => {
   modal.classList.remove('show');
   body.style.overflow = 'auto';
-
-  imgProjects.src = '';
 })
 
 function renderProjectDetails(details) {
@@ -157,6 +155,7 @@ const cardOverlay = document.querySelector('.overlay');
 
 cardProjects.forEach(card => {
   card.addEventListener('click', () => {
-    cardOverlay.classList.add('show')
+    cardOverlay.classList.add('show');
+    console.log('oi')
   });
 });
