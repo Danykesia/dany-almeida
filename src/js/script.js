@@ -66,6 +66,7 @@ const projectDetailsBtn = document.querySelectorAll('.overlay .material-icons');
 const modal = document.querySelector('.modal');
 const modalContent = document.querySelector('.modal-background');
 const closeModal = document.querySelector('.close-modal');
+const imgProjects = document.querySelectorAll('.mobile-images img');
 // Select project images
 const projectImg1 = document.querySelector('.project-image1');
 const projectImg2 = document.querySelector('.project-image2');
@@ -87,6 +88,8 @@ const projectImg16 = document.querySelector('.project-image16');
 closeModal.addEventListener('click', () => {
   modal.classList.remove('show');
   body.style.overflow = 'auto';
+
+  imgProjects.src = '';
 })
 
 function projectDetails(title, header) {
