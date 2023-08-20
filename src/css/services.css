@@ -121,7 +121,7 @@
 }
 
 .services-info-portuguese h2::after {
-  right: calc(100% - 395px);
+  right: calc(100% - 346px);
 }
 
 @media (min-width: 485px) {
