@@ -89,15 +89,16 @@ li {
   align-items: center;
   justify-content: center;
   padding: 4px;
-  background: #f1f6f9;
+  background-color: #f8efff;
   font-size: 18px;
   z-index: 150;
   color: var(--primary-medium);
   transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(209, 148, 252, 0.578);
 }
 
 #scrollToTop:hover {
-  background-color: #f8efff;
+  background-color: #fcf8ff;
   box-shadow: 0 0 10px rgba(209, 148, 252, 0.578);
 }
 
