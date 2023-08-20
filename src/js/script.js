@@ -61,6 +61,10 @@ window.onclick = function(e){
   if (!e.target.matches('.btn-d-languages') && hiddenDesktopFlag.classList.contains('show')) {
     hiddenDesktopFlag.classList.remove('show');
   }
+
+  if (e.target.matches('.modal')) {
+    modal.classList.remove('show');
+  };
 }
 
 // NAVBAR MOBILE
@@ -94,7 +98,7 @@ const closeModal = document.querySelector('.close-modal');
 closeModal.addEventListener('click', () => {
   modal.classList.remove('show');
   body.style.overflow = 'auto';
-})
+});
 
 function renderProjectDetails(details) {
   const projectTitle = document.querySelector('.project-title');
