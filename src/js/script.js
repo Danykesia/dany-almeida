@@ -121,17 +121,17 @@ function renderProjectDetails(details) {
   });
 }
 
-projectDetailsBtn.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    modal.classList.toggle('show');
-    if(window.scrollY < 800) {
-      body.style.overflow = 'auto';
-    }
-    body.style.overflow = 'hidden';
+// projectDetailsBtn.forEach((button, index) => {
+//   button.addEventListener('click', () => {
+//     modal.classList.toggle('show');
+//     if(window.scrollY < 800) {
+//       body.style.overflow = 'auto';
+//     }
+//     body.style.overflow = 'hidden';
 
-    renderProjectDetails(projectDetails[index]);
-  });
-});
+//     renderProjectDetails(projectDetails[index]);
+//   });
+// });
 
 const elements = document.querySelectorAll('.scroll-right, .fade')
 const scrollPosition = window.innerHeight * 0.7;
@@ -151,11 +151,20 @@ window.addEventListener('scroll', fadeScroll);
 
 // Show overlay on mobile devices
 const cardProjects = document.querySelectorAll('.portfolio-wrapper .card');
-const cardOverlay = document.querySelector('.overlay');
+const cardOverlay = document.querySelectorAll('.overlay');
 
 cardProjects.forEach(card => {
   card.addEventListener('click', () => {
-    cardOverlay.classList.add('show');
-    console.log('oi')
+    cardOverlay.forEach(overlay => {
+      overlay.classList.add('show');
+    })
   });
 });
+
+cardOverlay.forEach((overlay, index) => {
+  overlay.addEventListener('click', () => {
+    modal.classList.toggle('show');
+    renderProjectDetails(projectDetails[index]);
+  });
+});
+
