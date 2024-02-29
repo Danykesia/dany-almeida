@@ -39,7 +39,7 @@
 }
 
 .mfe img {
-  width: 310px;
+  width: 90%;
 }
 
 .project-wrap .description {
@@ -64,6 +64,14 @@
   transform: scale(1.07);
   background-color: var(--accent-dark);
 }
+
+
+@media(min-width: 550px) {
+  .mfe img {
+    width: 465px;
+  }
+}
+
 
 @media(min-width: 740px) {
   .project-wrap {
