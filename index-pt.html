@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#330c4c">
-  <meta name="description" content="Web Designer especializada em criar websites e e-commerces rápidos, modernos e eficientes. Responsive Websites · Blogs · Landing pages.">
+  <meta name="theme-color" content="#453177">
+  <meta name="description" content="UX/UI Designer">
 
   <link rel="shortcut icon" href="/favicon.svg" />
 
   <!-- Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
   <!-- Style CSS -->
   <link rel="stylesheet" href="src/css/style.css">
 
-  <title>Daniele Almeida - Web Design Services</title>
+  <title>Daniele de Almeida - UX/UI Designer</title>
 </head>
 <body>
   <button id="scrollToTop" title="go to top">
@@ -39,12 +39,14 @@
   <header>
     <div class="container">
       <nav>
-        <a href="#main"><img class="logo"  src="/img/Logo.svg" alt="Logo"></a>
+        <div class="navbar-left">
+          <a href="#main"><img class="logo"  src="/img/logo-light.svg" alt="Logo"></a>
+        </div>
         <!-- Mobile toggle -->
         <div class="mobile-right">
           <div class="languages">
             <div class="language-active">
-              <img src="/icons/brazil.svg" alt="Brazil flag" title="English">
+              <img src="/icons/portugal.svg" alt="Portugal flag" title="English">
             </div>
             <button title="Chose language">
               <i class="btn-m-languages material-icons">arrow_drop_down</i>
@@ -62,30 +64,27 @@
         <!-- Mobile Navbar -->
         <div class="mobile-nav">
           <ul aria-label="main">
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#work">Trabalhos</a></li>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#contact">Fale comigo</a></li>
+            <li><a class="text-medium" href="#projects">Projectos</a></li>
+            <li><a class="text-medium" href="#about">Sobre mim</a></li>
           </ul>
         </div>
-        <ul class="desktop-nav" aria-label="main">
-          <li><a href="#services">Serviços</a></li>
-          <img src="/icons/icon-neon.svg">
-          <li><a href="#work">Trabalhos</a></li>
-          <img src="/icons/icon-neon.svg" alt="">
-          <li><a href="#about">Sobre mim</a></li>
-        </ul>
-        <div class="menu-right">
-          <a href="#contact" class="text-s btn btn-contact">Fale comigo</a>
-          <div class="languages">
-            <div class="language-active">
-              <img src="/icons/brazil.svg" alt="Bandeira do Brasil" title="Português">
-            </div>
-            <button title="Chose language">
-              <i class="btn-d-languages material-icons">arrow_drop_down</i>
-            </button>
-            <div class="language-d-hidden">
-              <a href="/"><img src="/icons/england.svg" alt="England flag"></a>
+        <!-- Desktop Navbar -->
+        <div class="navbar-right">
+          <ul class="desktop-nav" aria-label="main">
+            <li><a class="text-medium" href="#projects">Projectos</a></li>
+            <li><a class="text-medium" href="#about">Sobre mim</a></li>
+          </ul>
+          <div class="menu-right">
+            <div class="languages">
+              <div class="language-active">
+                <img src="/icons/portugal.svg" alt="Portugal flag" title="English">
+              </div>
+              <button title="Chose language">
+                <i class="btn-d-languages material-icons">arrow_drop_down</i>
+              </button>
+              <div class="language-d-hidden">
+                <a href="/"><img src="/icons/england.svg" alt="England flag"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -99,121 +98,80 @@
           <h1 class="text-bold">
             Olá! <br class="break-line">Meu nome é Daniele.
           </h1>
-          <p class="text-m text-light">
-           Sou uma Web Designer com +3 anos de experiência. Minha especialidade é desenhar e desenvolver sites e aplicativos que seu público vai adorar.
+          <p class="text-m text-medium">
+            Sou uma UX/UI Designer residente em Lisboa.
           </p>
-          <a href="#about" class="btn btn-gradient text-medium">Saiba mais</a>
+          <a href="#about" class="btn text-bold"><i class="material-icons">download</i>
+          </span>Meu Currículo</a>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/daniele-almeida31/" target="_blank"><svg width="35" height="35" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="icon" d="M7.51037 0.339844C7.72852 0.339844 7.93773 0.426502 8.09199 0.580756C8.24624 0.735009 8.3329 0.944221 8.3329 1.16237V6.92004C8.3329 7.13819 8.24624 7.3474 8.09199 7.50165C7.93773 7.65591 7.72852 7.74257 7.51037 7.74257H1.7527C1.53455 7.74257 1.32534 7.65591 1.17109 7.50165C1.01683 7.3474 0.930176 7.13819 0.930176 6.92004V1.16237C0.930176 0.944221 1.01683 0.735009 1.17109 0.580756C1.32534 0.426502 1.53455 0.339844 1.7527 0.339844H7.51037ZM7.30474 6.71441V4.53472C7.30474 4.17914 7.16349 3.83812 6.91206 3.58669C6.66062 3.33526 6.31961 3.194 5.96403 3.194C5.61445 3.194 5.2073 3.40786 5.0099 3.72865V3.27214H3.86248V6.71441H5.0099V4.68689C5.0099 4.37021 5.26488 4.11112 5.58155 4.11112C5.73426 4.11112 5.8807 4.17178 5.98868 4.27976C6.09666 4.38773 6.15732 4.53418 6.15732 4.68689V6.71441H7.30474ZM2.52587 2.62646C2.70912 2.62646 2.88486 2.55367 3.01443 2.4241C3.144 2.29452 3.21679 2.11879 3.21679 1.93554C3.21679 1.55307 2.90835 1.24051 2.52587 1.24051C2.34154 1.24051 2.16475 1.31373 2.03441 1.44408C1.90407 1.57442 1.83084 1.75121 1.83084 1.93554C1.83084 2.31802 2.1434 2.62646 2.52587 2.62646ZM3.09753 6.71441V3.27214H1.95833V6.71441H3.09753Z" fill="#483157"/>
+              </svg></a>
+            <a href="https://github.com/Danykesia" target="_blank"><svg width="38" height="38" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="icon" d="M4.64876 0.927734C4.10868 0.927734 3.57389 1.03411 3.07492 1.24079C2.57596 1.44747 2.12258 1.7504 1.74069 2.13229C0.969426 2.90356 0.536133 3.94962 0.536133 5.04036C0.536133 6.85814 1.71646 8.40037 3.34917 8.94735C3.5548 8.98025 3.6206 8.85276 3.6206 8.74172V8.04669C2.4814 8.29344 2.23876 7.49559 2.23876 7.49559C2.04958 7.01853 1.78226 6.89104 1.78226 6.89104C1.40801 6.63606 1.81105 6.64428 1.81105 6.64428C2.22231 6.67307 2.44028 7.06788 2.44028 7.06788C2.79808 7.693 3.40263 7.50793 3.63705 7.40923C3.67406 7.14191 3.78099 6.96095 3.89615 6.85814C2.98314 6.75532 2.0249 6.40164 2.0249 4.83473C2.0249 4.37823 2.18118 4.0122 2.4485 3.72021C2.40738 3.61739 2.26343 3.18968 2.48963 2.63447C2.48963 2.63447 2.83509 2.52343 3.6206 3.05396C3.9455 2.96348 4.29918 2.91824 4.64876 2.91824C4.99833 2.91824 5.35201 2.96348 5.67691 3.05396C6.46242 2.52343 6.80788 2.63447 6.80788 2.63447C7.03408 3.18968 6.89014 3.61739 6.84901 3.72021C7.11633 4.0122 7.27261 4.37823 7.27261 4.83473C7.27261 6.40575 6.31026 6.75121 5.39314 6.85402C5.5412 6.98152 5.67691 7.23239 5.67691 7.61486V8.74172C5.67691 8.85276 5.74271 8.98436 5.95246 8.94735C7.58517 8.39626 8.76138 6.85814 8.76138 5.04036C8.76138 4.50028 8.655 3.96549 8.44833 3.46652C8.24165 2.96756 7.93871 2.51419 7.55682 2.13229C7.17493 1.7504 6.72156 1.44747 6.22259 1.24079C5.72362 1.03411 5.18883 0.927734 4.64876 0.927734Z" fill="#483157"/>
+            </svg></a>
+          </div>
         </div>
         <div class="banner-img">
-          <img src="/img/daniele.png" alt="Daniele Almeida">
+          <img src="/img/avatar.svg" alt="Daniele de Almeda Illustration">
         </div>
       </div>
     </div>
   </main>
-  <article id="services">
+  <section id="projects">
     <div class="container">
-      <div class="services-wrapper">
-        <div class="services-info-portuguese">
-          <p class="secondary-header text-bold">Serviços</p>
-          <h2 class="text-xl text-bold">Como eu posso <br>te ajudar?</h2>
-          <p class="text-s mt-2 text-regular">Meu objetivo é fazer seu negócio crescer, projetando e desenvolvendo projetos bonitos, modernos, eficientes e responsivos. Conte comigo para criar seu portfólio digital, blog, site institucional, loja virtual, aplicativos e muito mais.</p>
+      <h2 class="text-dark text-center text-bold text-xl mb-3 pb-1">Projectos</h2>
+      <div class="project-wrap">
+        <div class="mfe image">
+          <img class="mt-1" src="/public/metal-for-everyone-img/mockup-mfe.webp" alt="metal for everyone mockup">
         </div>
-        <div class="services-card-wrapper scroll-right">
-          <div class="services-card">
-            <div class="icon-wrapper">
-              <img src="/icons/design.svg" alt="">
-            </div>
-            <h3 class="text-s mt-2 text-medium">Web & Mobile App Design</h3>
-            <p class="text-xs mt-3">Com um forte foco nas diretrizes das plataformas modernas e nas necessidades do usuário, eu posso criar designs exclusivos de aplicativos Web e móveis.</p>
-          </div>
-          <div class="services-card">
-            <div class="icon-wrapper">
-              <img src="/icons/shop.svg" alt="">
-            </div>
-            <h3 class="text-s mt-2 text-medium">E-commerce</h3>
-            <p class="text-xs mt-3">Desenho e desenvolvo a melhor solução de e-commerce para sua loja online.</p>
-          </div>
-          <div class="services-card">
-            <div class="icon-wrapper">
-              <img class="computer1" src="/icons/computer1.svg" alt="">
-              <img class="computer2" src="/icons/computer2.svg" alt="">
-            </div>
-            <h3 class="text-s mt-2 text-medium">Web Development</h3>
-            <p class="text-xs mt-3">Utilizo ferramentas como HTML, CSS, JavaScript e Wordpress/Elementor para fazer sites modernos e funcionais.</p>
-          </div>
-          <div class="services-card">
-            <div class="icon-wrapper">
-              <img class="redesign1" src="/icons/redesign1.svg" alt="">
-              <img class="redesign2" src="/icons/redesign2.svg" alt="">
-            </div>
-            <h3 class="text-s mt-2 text-medium">Serviços de Redesign</h3>
-            <p class="text-xs mt-3">Se você está insatisfeito com um projeto anterior, eu posso melhorar a aparência do seu site ou aplicativo móvel.</p>
-          </div>
+        <div class="p-l description">
+          <p class="text-regular text-xxs mb-2 text-dark">#USER RESEARCH #WIREFRAMING #UI DESIGN #BRANDING DESIGN</p>
+          <h3 class="mb-1 text-bold text-dark">Metal For Everyone</h3>
+          <h4 class="text-s text-regular mb-2 text-dark">Site e blog sobre o mundo do Heavy Metal.</h4>
+          <a href="/metal-for-everyone.html" class="btn text-bold">Ver Estudo de Caso</button></a>
+        </div>
+      </div>
+      <div class="project-wrap">
+        <div class="hm image">
+          <img class="mt-1" src="/public/home-mate/mockup-homemate.webp" alt="homemate mockup">
+        </div>
+        <div class="p-l description">
+          <p class="text-regular text-xxs mb-2 text-dark">#USER RESEARCH #WIREFRAMING #PROTOTYPING #USER TESTING #UIDESIGN</p>
+          <h3 class="mb-1 text-bold text-dark">HomeMate</h3>
+          <h4 class="text-s text-regular mb-2 text-dark">Uma plataforma online que liga clientes aos melhores profissionais de serviços de limpeza em Portugal.</h4>
+          <a href="/home-mate.html" class="btn text-bold">Ver Estudo de Caso</button></a>
         </div>
       </div>
     </div>
-  </article>
-  <article id="work">
-    <div class="portfolio-wrapper"></div>
-  </article>
-  <article id="about">
+  </section>
+  <section id="about">
     <div class="container">
-      <div class="about-wrapper scroll-right">
-        <div class="about">
-          <div class="headline-wrapper">
-            <p class="secondary-header text-bold">Saiba mais</p>
-            <h2 class="text-xxl">Sobre </br>Mim</h2>
-          </div>
-          <div class="about-content">
-            <p class="text-s text-regular">Olá! Seja bem-vindo(a) ao meu portfolio.</p>
-            <p class="mt-1 text-s text-regular">Sou uma Web Designer que cria e desenvolve soluções modernas, inovadoras e práticas para o usuário.</p>
-            <p class="mt-1 text-s text-regular">Adoro trabalhar com Web Design porque gosto de resolver problemas de usabilidade e experiência do usuário. Sendo assim, sempre faço o possível para criar plataformas únicas e interativas que agreguem valor a qualquer tipo negócio.</p>
-          </div>
-        </div>
-        <div class="memoji">
-          <img src="/img/daniele-memoji.png" alt="Daniele memoji">
-        </div>
-      </div>
+      <h2 class="text-dark text-bold text-xl mt-3">Sobre mim</h2>
+      <p class="text-dark text-s mt-3">
+        Sou uma profissional apaixonada por design e inovação e busco me desenvolver cada vez mais na área de UX/UI.
+      </p>
+      <p class="text-dark text-s mt-2">
+        Além do UX/UI Design, <strong>gosto de me desafiar aprendendo tecnologias como CSS, JavaScript e frameworks como Vue Js e Bootstrap para integrar design e desenvolvimento ao meu trabalho</strong>.
+      </p>
+      <p class="text-dark text-s mt-2">
+      <strong>Minha jornada profissional começou no Direito</strong>, onde adquiri habilidades valiosas como apreciar a clareza, a lógica e a persuasão em minhas atividades profissionais, a resolução de problemas, a ética profissional e a defesa dos interesses de meus clientes. Em relação à última habilidade, <strong>protejo agora os interesses dos usuários para garantir que suas necessidades estejam no centro do design</strong>.
+      </p>
+      <p class="text-dark text-s mt-2">
+        Neste momento procuro uma oportunidade de colocar meus conhecimentos em prática em um ambiente profissional onde possa contribuir com minhas habilidades e acelerar meu aprendizado na área de UX/UI.
+      </p>
     </div>
-  </article>
-  <article id="contact">
-    <div class="container">
-      <div class="contact-header-portuguese">
-        <h3 class="text-xl">Me fala sobre o seu projeto.</h3>
-        <p class="mt-2 text-m text-medium">Vamos criar algo </br>juntos!</p>
-        <div>
-          <div class="direct-contact mt-2">
-            <i class="material-icons">mail_outline</i>
-            <p>Envia-me um e-mail: <a href="mailto: danik.almeida31@gmail.com">danik.almeida31@gmail.com</a></p>
-          </div>
-          <div class="direct-contact mt-1">
-            <img src="/icons/whatsapp.svg" alt="whatsapp icon"></img>
-            <p>Manda-me uma mensgem: <a href="https://wa.me/351912037227">(+351) 912 037 227</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form-portuguese">
-        <h4 class="text-bold">Envia-me uma mensagem</h4>
-        <form action="">
-          <div class="form-group">
-            <input type="text" id="name" class="form__input" autocomplete="off" placeholder=" ">
-            <label for="name" class="form__label">Nome</label>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" class="form__input" autocomplete="off" placeholder=" ">
-            <label for="email" class="form__label">E-mail</label>
-          </div>
-          <div class="form-group">
-            <textarea class="form__input" id="message" cols="30" rows="6" placeholder=" "></textarea>
-            <label for="message" class="form__label">Mensagem</label>
-          </div>
-          <button class="btn btn-gradient">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </article>
+  </section>
   <footer>
-    <p>© <span id="currentYear"></span> - Daniele Almeida - Todos os direitos reservados.</p>
+    <p>© <span class="currentYear"></span> - Daniele de Almeida - Todos os Direitos Reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/daniele-almeida31/" target="_blank"><svg width="30" height="30" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="icon" d="M7.51037 0.339844C7.72852 0.339844 7.93773 0.426502 8.09199 0.580756C8.24624 0.735009 8.3329 0.944221 8.3329 1.16237V6.92004C8.3329 7.13819 8.24624 7.3474 8.09199 7.50165C7.93773 7.65591 7.72852 7.74257 7.51037 7.74257H1.7527C1.53455 7.74257 1.32534 7.65591 1.17109 7.50165C1.01683 7.3474 0.930176 7.13819 0.930176 6.92004V1.16237C0.930176 0.944221 1.01683 0.735009 1.17109 0.580756C1.32534 0.426502 1.53455 0.339844 1.7527 0.339844H7.51037ZM7.30474 6.71441V4.53472C7.30474 4.17914 7.16349 3.83812 6.91206 3.58669C6.66062 3.33526 6.31961 3.194 5.96403 3.194C5.61445 3.194 5.2073 3.40786 5.0099 3.72865V3.27214H3.86248V6.71441H5.0099V4.68689C5.0099 4.37021 5.26488 4.11112 5.58155 4.11112C5.73426 4.11112 5.8807 4.17178 5.98868 4.27976C6.09666 4.38773 6.15732 4.53418 6.15732 4.68689V6.71441H7.30474ZM2.52587 2.62646C2.70912 2.62646 2.88486 2.55367 3.01443 2.4241C3.144 2.29452 3.21679 2.11879 3.21679 1.93554C3.21679 1.55307 2.90835 1.24051 2.52587 1.24051C2.34154 1.24051 2.16475 1.31373 2.03441 1.44408C1.90407 1.57442 1.83084 1.75121 1.83084 1.93554C1.83084 2.31802 2.1434 2.62646 2.52587 2.62646ZM3.09753 6.71441V3.27214H1.95833V6.71441H3.09753Z" fill="#47454e"/>
+        </svg></a>
+      <a href="https://github.com/Danykesia" target="_blank"><svg width="34" height="34" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="icon" d="M4.64876 0.927734C4.10868 0.927734 3.57389 1.03411 3.07492 1.24079C2.57596 1.44747 2.12258 1.7504 1.74069 2.13229C0.969426 2.90356 0.536133 3.94962 0.536133 5.04036C0.536133 6.85814 1.71646 8.40037 3.34917 8.94735C3.5548 8.98025 3.6206 8.85276 3.6206 8.74172V8.04669C2.4814 8.29344 2.23876 7.49559 2.23876 7.49559C2.04958 7.01853 1.78226 6.89104 1.78226 6.89104C1.40801 6.63606 1.81105 6.64428 1.81105 6.64428C2.22231 6.67307 2.44028 7.06788 2.44028 7.06788C2.79808 7.693 3.40263 7.50793 3.63705 7.40923C3.67406 7.14191 3.78099 6.96095 3.89615 6.85814C2.98314 6.75532 2.0249 6.40164 2.0249 4.83473C2.0249 4.37823 2.18118 4.0122 2.4485 3.72021C2.40738 3.61739 2.26343 3.18968 2.48963 2.63447C2.48963 2.63447 2.83509 2.52343 3.6206 3.05396C3.9455 2.96348 4.29918 2.91824 4.64876 2.91824C4.99833 2.91824 5.35201 2.96348 5.67691 3.05396C6.46242 2.52343 6.80788 2.63447 6.80788 2.63447C7.03408 3.18968 6.89014 3.61739 6.84901 3.72021C7.11633 4.0122 7.27261 4.37823 7.27261 4.83473C7.27261 6.40575 6.31026 6.75121 5.39314 6.85402C5.5412 6.98152 5.67691 7.23239 5.67691 7.61486V8.74172C5.67691 8.85276 5.74271 8.98436 5.95246 8.94735C7.58517 8.39626 8.76138 6.85814 8.76138 5.04036C8.76138 4.50028 8.655 3.96549 8.44833 3.46652C8.24165 2.96756 7.93871 2.51419 7.55682 2.13229C7.17493 1.7504 6.72156 1.44747 6.22259 1.24079C5.72362 1.03411 5.18883 0.927734 4.64876 0.927734Z" fill="#47454e"/>
+      </svg></a>
+    </div>
   </footer>
 
   <!-- Script -->
