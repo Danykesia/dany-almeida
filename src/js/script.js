@@ -23,6 +23,8 @@
 // Scroll to top button - Make page go to top
 let scrollToTop = document.querySelector('#scrollToTop');
 
+scrollToTop.style.display = "none";
+
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
@@ -71,11 +73,19 @@ window.onclick = function(e){
 // Make navbar mobile appear and disappear.
 const btnToggle = document.querySelector('.toggle');
 const mobileNav = document.querySelector('.mobile-nav');
+const mbNavA = document.querySelectorAll('.mobile-nav li a');
+
 btnToggle.addEventListener('click', function () {
   this.classList.toggle('activate');
   mobileNav.style.visibility = 'visible';
   mobileNav.style.transition = 'transform .4s';
   mobileNav.classList.toggle('show-nav');
+});
+mbNavA.forEach((a) => {
+  a.addEventListener('click', function() {
+    mobileNav.classList.remove('show-nav');
+    btnToggle.classList.remove('activate');
+  });
 });
 
 //Make navbar background color change
@@ -86,12 +96,12 @@ const logo = document.querySelector('.logo');
     if(window.scrollY > 0){
       nav.classList.add('navbar-color', window.scrollY > 0)
         aLink.forEach((link) => {
-          link.style.color = 'var(--primary)';
+          link.style.color = '#917fc2';
         link.onmouseover = () => {
-          link.style.color = 'var(--accent-dark)';
+          link.style.color = 'var(--primary)';
         };
         link.onmouseout = () => {
-          link.style.color = 'var(--primary)';
+          link.style.color = '#917fc2';
         };   
         });
         logo.src = '/img/logo-dark.svg';
@@ -110,6 +120,29 @@ const logo = document.querySelector('.logo');
       logo.src = '/img/logo-light.svg';
     }
 });
+
+// Active link 
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.desktop-nav a'); 
+
+window.onscroll = () => {
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+  });
+
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 250;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    console.log(sec.id, top, offset, height)
+
+    if (top >= offset && top < offset + height) {
+      document.querySelector('.desktop-nav a[href*=' + id + ']').classList.add('active');
+    };
+  });
+};
 
 // Current year
 let currentDate = document.querySelector('.currentYear')
@@ -189,4 +222,3 @@ cardOverlay.forEach((overlay, index) => {
     renderProjectDetails(projectDetails[index]);
   });
 });
-
