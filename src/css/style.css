@@ -27,3 +27,7 @@
   transition: 0.7s all;
   filter: blur(0px);
 }
+
+html {
+  scroll-behavior: smooth;
+}
