@@ -33,6 +33,18 @@ nav a {
   cursor: pointer;
 }
 
+nav .project-nav a {
+  margin: 0 10px;
+  font-size: var(--text-size-s);
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+nav .project-nav {
+  display: flex;
+  align-items: center;
+}
+
 nav .desktop-nav {
   display: none;
 }
@@ -263,8 +275,12 @@ nav .logo {
     color: #fff;
   }
 
-  .desktop-nav a:hover {
+  .desktop-nav a:hover, .project-nav a:hover {
     color: #84c7ff;
+  }
+
+  .desktop-nav a.active {
+    color: var(--primary) !important;
   }
 
   .btn-contact {

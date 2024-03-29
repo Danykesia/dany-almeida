@@ -23,7 +23,7 @@ main > * {
 }
 
 .headline h1 {
-  font-size: var(--text-size-xxxl);
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
@@ -39,7 +39,7 @@ main > * {
   background-size: 36px;
   width: 40px;
   height: 40px;
-  left: 140px;
+  left: 130px;
   top: 10px;
 }
 
@@ -73,6 +73,10 @@ main > * {
     height: 100%;
     padding: 40px 0;
   }
+
+  .headline h1 {
+    font-size: var(--text-size-xxxl);
+  }
   
   .main-wrapper {
     flex-direction: row;
@@ -81,13 +85,13 @@ main > * {
   }
 
   .headline {
-    flex-basis: 60%;
+    flex-basis: 64%;
   }
 
   .headline::before {
-    left: 235px;
-    top: 133px
-  }
+    left: 268px;
+    top: 162px;
+   }
 
   .break-line {
     display: none;
@@ -98,41 +102,43 @@ main > * {
   main {
     padding: 90px 0;
   }
+}
 
+@media (min-width: 847px) {
   .headline::before {
-    left: 286px;
-    top: 75px;
+    left: 336px;
+    top: 92px;
   }
 }
 
-@media (min-width: 879px) {
+@media (min-width: 920px) and (max-width: 924px) {
   .headline::before {
-    left: 231px;
+    left: 338px;
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 958px) {
   .headline {
     flex-basis: 55%;
   }
 }
 
-@media (min-width: 958px) {
+@media (min-width: 1010px) {
   .headline::before {
-    left: 232px;
+    left: 266px;
   }
 }
 
 @media (min-width: 1024px) {
   .headline {
-    padding-left: 90px;
+    padding-left: 58px;
   }
 
   .headline::before {
     background-size: 40px;
     width: 40px;
     height: 50px;
-    left: 25px;
+    left: 0px;
     top: 14px;
   }
 
@@ -143,6 +149,14 @@ main > * {
 }
 
 @media (min-width: 1200px) {
+  .headline {
+    padding-left: 90px;
+  }
+
+  .headline::before {
+    left: 30px;
+  }
+
   .main-wrapper {
     gap: 0;
   }

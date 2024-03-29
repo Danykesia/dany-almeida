@@ -7,7 +7,7 @@
   --primary-medium: #221547;
   --primary-light: #d8ceff;
   --accent: #4f9ce4;
-  --accent-dark: #327abc;
+  --accent-dark: #2464a1;
   --accent-light: #ceebf9;
   --bg-light: #e7f1f5;
   --body-color: rgb(253, 254, 255);
@@ -19,7 +19,7 @@
   --text-size-l: 2rem;
   --text-size-xl: 2.7rem;
   --text-size-xxl: 3rem;
-  --text-size-xxxl: 3.43rem;
+  --text-size-xxxl: 4rem;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -329,8 +329,10 @@ li {
 .social-icons a:hover {
   transform: scale(1.09);
 }
+
 footer {
-  height: 12vh;
+  height: auto;
+  padding: 15px 20px;
   background-color: #e9e4f6;
   color: var(--text-gray);
   display: flex;
@@ -345,6 +347,12 @@ footer .social-icons {
 
 footer p {
   text-align: center;
+  font-size: 18px;
+  font-family: var(--font-primary);
+}
+
+strong {
+  font-weight: 600;
 }
 
 @media (min-width: 920px) {
