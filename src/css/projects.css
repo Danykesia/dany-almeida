@@ -34,8 +34,8 @@
 }
 
 .hm img {
-  width: 270px;
-  margin-left: 50px;
+  width: 230px;
+  margin-top: 25px;
 }
 
 .mfe img {
@@ -93,7 +93,7 @@
   }
 
   .hm img {
-    width: 70%;
+    width: 55%;
   }
   
   .mfe img {
@@ -109,7 +109,7 @@
 
 @media(min-width: 1024px) {
   .hm img {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -120,6 +120,6 @@
   }
 
   .hm img {
-    width: 48%;
+    width: 40%;
   }
 }
