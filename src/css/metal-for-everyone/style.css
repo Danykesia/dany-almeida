@@ -128,7 +128,6 @@
 .mfe-mobile-nav ul {
   display: flex;
   flex-direction: column;
-  padding: 0 5px;
 }
 
 .mfe-mobile-nav a {
@@ -764,10 +763,6 @@
 
   .mfe-mobile-nav {
     width: 100%;
-  }
-
-  .mfe-mobile-nav ul {
-    padding: 0 25px;
   }
 }
 
