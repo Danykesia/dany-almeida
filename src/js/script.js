@@ -136,8 +136,6 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
-    console.log(sec.id, top, offset, height)
-
     if (top >= offset && top < offset + height) {
       document.querySelector('.desktop-nav a[href*=' + id + ']').classList.add('active');
     };
