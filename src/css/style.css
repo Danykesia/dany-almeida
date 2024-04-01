@@ -2,11 +2,12 @@
 @import url(./global.css);
 @import url(./header.css);
 @import url(./banner.css);
-@import url(./services.css);
 @import url(./work.css);
 @import url(./about.css);
-@import url(./contact.css);
 @import url(./modal.css);
+@import url(./projects.css);
+@import url(./metal-for-everyone/style.css);
+@import url(./home-mate/style.css);
 
 /* Animation */
 .fade,
@@ -25,4 +26,8 @@
   transform: translate(0, 0);
   transition: 0.7s all;
   filter: blur(0px);
+}
+
+html {
+  scroll-behavior: smooth;
 }

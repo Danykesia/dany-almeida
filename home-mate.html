@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                                                                                    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6548b6">
+  <meta name="description" content="Web Designer specializing in creating fast, modern and efficient websites and e-commerce. Responsive Websites · Blogs · Landing pages.">
+
+  <link rel="shortcut icon" href="/favicon.svg" />
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <title>Study Case - HomeMate</title>
+</head>
+<body id="hm">
+  <button id="scrollToTop" title="go to top">
+    <i class="material-icons">arrow_drop_up</i>
+  </button>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="navbar-left">
+          <a href="/"><img class="logo"  src="/img/logo-light.svg" alt="Logo"></a>
+        </div>
+        <div class="mfe-navbar-right">
+          <!-- Desktop Navbar -->
+          <ul class="project-nav" aria-label="main">
+            <li><a class="text-medium" href="/#projects">More projects</a></li>
+          </ul>
+          <!-- Toggle -->
+          <div class="mobile-right">
+            <div class="mfe-toggle">
+              <span class="line-toggle"></span>
+              <span class="line-toggle"></span>
+              <span class="line-toggle"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Navbar -->
+        <div class="mfe-mobile-nav">
+          <ul aria-label="main">
+            <li><a class="text-light" href="#hm-overview">Overview</a></li>
+            <li><a class="text-light" href="#hm-whytodo">Why to do this project</a></li>
+            <li><a class="text-light" href="#hm-problemstmt">Problem Statement</a></li>
+            <li><a class="text-light" href="#hm-process">Design Process</a></li>
+            <li><a class="text-light" href="#hm-deskresearch">Desk Research</a></li>
+            <li><a class="text-light" href="#hm-competitor">Competitor Analysis</a></li>
+            <li><a class="text-light" href="#hm-bmc">Business Model Canvas</a></li>
+            <li><a class="text-light" href="#hm-csdmatrix">CSD Matrix</a></li>
+            <li><a class="text-light" href="#hm-userresearch">User Research</a></li>
+            <li><a class="text-light" href="#hm-personas">Personas</a></li>
+            <li><a class="text-light" href="#hm-userjourney">User Journey</a></li>
+            <li><a class="text-light" href="#hm-taskflow">Task Flow</a></li>
+            <li><a class="text-light" href="#hm-lowfiwireframe">Low-Fidelity Wireframes</a></li>
+            <li><a class="text-light" href="#hm-sitemap">Site Map</a></li>
+            <li><a class="text-light" href="#hm-visualdesign">Visual Design</a></li>
+            <li><a class="text-light" href="#hm-highfiwireframe">High-fidelity Wireframes</a></li>
+            <li><a class="text-light" href="#hm-usertest">Usability Testing</a></li>
+            <li><a class="text-light" href="#hm-conclusion">Conclusions</a></li>
+            <li class="pb-3 pb-6-mb"><a class="text-light" href="#hm-prototype">Video Prototype Presentation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="hm-banner height-auto-mb">
+    <div class="container">
+      <div class="hm-headline">
+        <h1 class="title">HomeMate</h1>
+        <p class="subtitle">An online platform that connects customers with the best cleaning service professionals in Portugal.</p>
+        <h2 class="hm-subheadline">UX/UI CASE STUDY</h2>
+        <div class="hm-summary">
+          <div class="col">
+            <p class="text-bold mb-1">Team</p>
+            <p>Solo project</p>
+          </div>
+          <div class="col">
+            <p class="text-bold mb-1">My role</p>
+            <p class="mb-1">User Research</p>
+            <p class="mb-1">UI Design</p>
+            <p class="mb-1">Wireframing</p>
+            <p class="mb-1">Prototyping</p>
+            <p class="mb-1">User Testing</p>
+          </div>
+          <div class="col">
+            <p class="text-bold mb-1">Start</p>
+            <p>October/2023</p>
+          </div>
+          <div class="col">
+            <p class="text-bold mb-1">Duration</p>
+            <p>1 month</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="hm-mockup">
+        <img src="/public/home-mate/mockup-homemate.webp" alt="Home Mate mockup">
+      </div>
+    </div>
+  </section>
+  <section id="hm-overview" class="hm-bg hm-overview height-auto-mb">
+    <div class="container justify-center">
+      <div class="hm-image">
+        <img src="/public/home-mate/hm-mockup1.webp" alt="Home page mockup">
+      </div>
+      <div class="hm-content flex-basis-50">
+        <h3>Overview</h3>
+        <p>
+          HomeMate is a mobile application <strong>designed to facilitate hiring cleaning services</strong>, making the process more convenient and safe for both professionals and clients.
+        </p>
+        <p>
+          The application will act as a digital <strong>marketplace</strong> where <strong>freelance professionals can offer their services, and clients can find and hire the professionals who best meet their needs.</strong>  
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="hm-whytodo" class="hm-bg hm-whytodo height-auto-mb">
+    <div class="container justify-center">
+      <div class="hm-content flex-basis-50">
+        <h3>Why to do this project</h3>
+        <p>
+          This project caught my attention because it offers a convenient service for an <strong>increasingly hectic and technology-driven society.</strong>
+        </p>
+        <p>
+          As I am also included in this frantic and technological world, I concluded that acting on this project <strong>would be important so that I can benefit from the services it provides and improve my skills as a UX/UI designer.</strong>
+        </p>
+      </div>
+      <div class="hm-image flex-basis-md-50">
+        <img src="/public/home-mate/whytodo.webp" alt="Illustration">
+      </div>
+    </div>
+  </section>
+  <section id="hm-problemstmt" class="hm-bg hm-problemstmt height-auto-mb">
+    <div class="container justify-center">
+      <div class="hm-image flex-basis-md-50">
+        <img src="/public/home-mate/problemdef.svg" alt="Illustration">
+      </div>
+      <div class="hm-content flex-basis-50">
+        <h3>Problem Statement</h3>
+        <p>
+          People often need help finding skilled, available, and reliable professionals close to them, and <strong>the lack of references makes this search complicated and risky</strong>. Hence, connecting these qualified professionals to customers looking for cleaning services is essential.
+        </p>
+        <h4 class="mt-2">Problems HomeMate aims to solve:</h3>
+        <ul class="mt-2">
+          <li>Lack of transparency in prices;</li>
+          <li class="mt-1">Schedules incompatible with the user’s routine;</li>
+          <li class="mt-1">Lack of evaluations and references;</li>
+          <li class="mt-1">Waste of time and energy.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="hm-process" class="hm-bg hm-process height-auto-mb">
+    <div class="container justify-center flex-column-mb">
+      <div class="hm-content flex-basis-50">
+        <h3>Design Process</h3>
+        <p>
+          I used the <strong>design thinking process</strong> to understand the problem, generate ideas, develop projects, and iterate until I found a satisfactory solution. The great advantage of this process is that it is flexible and non-linear. In other words, <strong>I can discover new challenges, solutions, and insights about users throughout each project stage.</p></strong>
+        </p>
+      </div>
+      <div class="hm-image flex-basis-md-50">
+        <img class="width-100 width-70" src="/public/home-mate/process.svg" alt="Design process illustration">
+      </div>
+    </div>
+    <div class="container hm-process-details justify-center">
+      <div class="box">
+        <p>Discovering</p>
+        <p>Desk Research</p>
+        <p>Competitor Analysis</p>
+        <p>Business Model Canvas</p>
+        <p>Matrix CSD</p>
+        <p>User Research</p>
+      </div>
+      <div class="box">
+        <p>Defining the problem</p>
+        <p>Personas</p>
+        <p>User Journey</p>
+        <p>Matrix MoSCoW</p>
+      </div>
+      <div class="box">
+        <p>Ideating solutions</p>
+        <p>Task flow</p>
+        <p>Low fidelity Wireframes & prototypes</p>
+        <p>Site mapping</p>
+      </div>
+      <div class="box">
+        <p>Developing solutions</p>
+        <p>High fidelity Wireframes & prototypes</p>
+        <p>Visual design</p>
+      </div>
+      <div class="box">
+        <p>Trying solutions</p>
+        <p>Usability test</p>
+        <p>User feedbacks</p>
+      </div>
+    </div>
+  </section>
+  <section id="hm-discovering" class="hm-bg flex-column height-auto">
+    <div class="container flex-column align-normal">
+      <h2>Discovering</h2>
+      <div class="hm-content">
+        <h3 id="hm-deskresearch" class="mt-2 flex-self-start">Desk Research</h3>
+        <p>
+          To better understand <strong>the current scenario of the cleaning services market in Portugal and worldwide</strong>, I started my research by doing Desk Research. Therefore, I used materials published online, such as news, Google trends, reports, and websites of companies specializing in the type of service in question.
+        </p>
+        <p>And this was the information I got:</p>
+       <div class="hm-research-content">
+        <div class="flex-basis-50 mt-2">
+          <p class="content-border">
+            When searching Google Trends, I saw the trend of searching for <strong class="hm-secondary-dark">“urgent maid”</strong> in Portugal in the last 12 months. And this is another sign that this is a promising market in the country.
+          </p>
+          <img class="mt-2 width-100" src="/public/home-mate/chart-google-trends.webp" alt="Google trends chart">
+        </div>
+        <div class="flex-basis-50">
+          <img class="mt-2 width-100" src="/public/home-mate/chart-desk-research.webp" alt="Domestic services most requested by portuguese chart">
+        </div>
+       </div>
+       <div class="mt-2 hm-research-content align-normal">
+        <div class="flex-basis-50">
+          <div class="content-border">
+            <p class="mb-1"><strong>Online Home Services Market Growth Rate</strong></p>
+            <p class="mb-1">The online on-demand home services market was valued at USD 3,456.00 million in 2021 and is expected to reach USD 6,396.81 million by 2029, registering a CAGR of 8.0% during the forecast period from 2022- 2029.</p>
+            <p>CAGR - Compound Annual Growth Rate.</p>
+          </div>
+          <span>https://www.databridgemarketresearch.com/reports/global-online-on-demand-home-services-market</span>
+          <div class="mt-2 content-border">
+            <p class="m-0">There are currently <strong>more than 40 thousand companies dedicated to providing cleaning services in the Iberian peninsula</strong>, generating around 600 thousand jobs together, with Spain responsible for 88% and Portugal for 12%.</p>
+          </div>
+          <span>https://pmemagazine.sapo.pt/mercado-dos-servicos-de-limpeza-cresceu-43-em-portugal-em-2021/</span>
+        </div>
+        <div class="m-0 flex-basis-50">
+          <img class="m-0 width-100" src="/public/home-mate/chart-global.webp" alt="Global online on-demand home services chart">
+        </div>
+       </div>
+       <div class="mt-3 content-border">
+        <p class="mb-1"><strong>The billion-dollar Portuguese tourism sector</strong></p>
+        <p class="mb-1">
+          Highlighted among the most visited countries in Europe, Portugal recorded revenue of €22 billion in 
+          2022 in the tourism sector, exceeding pre-pandemic periods (2019) by 20%. The high performance should 
+          continue in 2023 and boost not only investments in businesses that operate directly in the segment 
+          but also many other related areas, such as real estate and construction – which guarantee the 
+          infrastructure to absorb the high flow of tourists – <strong>as well as the general services sector, 
+          especially those focused on cleaning and maintaining homes, hotels, and other accommodations.</strong>
+        </p>
+      </div>
+      <span>https://www.mundolusiada.com.br/comunidade/os-setores-mais-promissores-e-os-mitos-sobre-o-mercado-de-franchising-portugues/</span>
+      </div>
+    </div>
+    <div class="container align-stretch">
+      <div class="mt-3 mr-1 mb-3 hm-content hm-conclusion-box flex-basis-50">
+        <h4 class="hm-secondary-dark">Challenges</h4>
+        <li class="mt-2">The <strong>highly competitive market</strong> can trigger a significant lack of customer confidence in quality, prices, and payments.</li>
+        <li class="mt-1">The technology that drives this market <strong>can also be a barrier</strong> due to the commercialization of <strong>robotic and multitasking devices that function in cleaning environments.</strong></li>
+      </div>
+      <div class="mt-3 ml-1 mb-3 hm-content hm-conclusion-box flex-basis-50">
+        <h4 class="hm-secondary-dark">Discoveries</h4>
+        <li class="mt-2">This market tends to grow in Portugal due to the <strong>country's tourist success</strong>. Therefore, more companies and hosting service hosts must hire cleaning professionals.</li>
+        <li class="mt-1">The need for this type of service has been increasing due to the ease and convenience of digital platforms, as they connect clients to professionals and facilitate the hiring and payment process.</li>
+      </div>
+    </div>
+  </section>
+  <section id="hm-competitor" class="hm-bg hm-competitor flex-column height-auto">
+    <div class="container">
+      <div class="hm-content flex-basis-60 flex-basis-100">
+        <h3>Competitor Analysis</h3>
+        <p>
+          After realizing the success of the online domestic services market nationally and globally, I decided to <strong>analyze the applications of 5 direct competitors</strong> to identify their failures and learn from them, as well as learn from their successes and develop insights from their platforms.
+        </p>
+      </div>
+    </div>
+    <div class="hm-content flex flex-row flex-column mt-3">
+      <img src="/public/home-mate/competitor-board.webp" alt="Competitor analysis board">
+      <p>
+        In this process, I took several <strong>screenshots</strong> of the application screens to collect interface ideas, analyzed the <strong>cleaning service contracting process flows, and compared their functionalities</strong>.
+      </p>
+    </div>
+    <div class="container flex-column">
+      <div class="hm-content mt-3 m-0-mb">
+        <p><strong>And the results obtained were these:</strong></p>
+        <img class="mt-2 width-100" src="/public/home-mate/competitor-table.webp" alt="Competitor analysis table">
+        <div class="mt-3 mr-1 mb-3 hm-content hm-conclusion-box">
+          <h4 class="hm-secondary-dark">Findings</h4>
+          <p>
+            The applications currently on the market offer services beyond domestic cleaning, such as car cleaning, gardening, repairs, and installations.
+          </p>
+          <p>
+            I also observed that competitors need to <strong>improve the user experience from their first contact with the app</strong>, and I noticed that most do <strong>not use onboarding</strong>. In other words, they make users start their experiences by requiring them to perform certain tasks, such as authorizing location and notifications. <strong>However, the aforementioned resource is not just a set of beautiful screens; they are the app's gateway and a friendly way of welcoming users.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="hm-bmc" class="hm-bg hm-bmc height-auto">
+    <div class="container justify-center">
+      <div class="hm-content">
+        <h3>Business Model Canvas</h3>
+        <p>
+          Continuing the problem immersion phase, I created a Business Model Canvas to visualize the business clearly and concisely, reflect on my ideas, and better filter them.
+        </p>
+        <img class="mt-3 width-100" src="/public/home-mate/bmc.webp" alt="Business model canvas">
+      </div>
+    </div>
+  </section>
+  <section id="hm-csdmatrix" class="hm-bg hm-csdmatrix height-auto-mb">
+    <div class="container justify-center">
+      <div class="hm-content flex-basis-50">
+        <h3>CSD MATRIX</h3>
+        <p>
+          <strong>To better understand the context of the problem and improve my approach to the questions I would
+          ask in user interviews</strong>, I decided to create a <strong>matrix of certainties, doubts, and assumptions</strong>
+          (CSD Matrix) of all the information I obtained with the previous techniques.
+        </p>
+      </div>
+      <div class="hm-image flex-basis-50">
+        <img class="width-100" src="/public/home-mate/cdsmatrix.webp" alt="CSD Matrix">
+      </div>
+    </div>
+  </section>
+  <section id="hm-userresearch" class="hm-bg hm-userresearch flex-column height-auto">
+    <div class="hm-content flex flex-row">
+      <div class="hm-image-bg">
+        <img src="/public/home-mate/userresearch.webp" alt="User research - user photos">
+      </div>
+      <div class="flex-basis-50">
+        <h3>User Research</h3>
+        <p>
+          To validate all my <strong>certainties, assumptions, and doubts</strong>, I created some questions for my user research. In this way, I collected both qualitative and quantitative data.
+        </p>
+        <p>
+          Initially, I carried out an <strong>online questionnaire survey</strong>, collecting information from 15 participants
+          (of these, 13 were potential users of the client version and 2 cleaning professionals).
+        </p>
+        <p>
+          Next, I interviewed 4 people <strong>via video call and telephone</strong>, asking them to share their perceptions, needs, frustrations, and experiences.
+        </p>
+      </div>
+    </div>
+    <div class="container hm-research-result">
+      <h4>Quantitative research</h4>
+      <p>Below are the questions aimed at users of the customer version:</p>
+      <img class="mt-3 flex-self-center" src="/public/home-mate/userrearch-chart1.webp" alt="Quantitative research chart - client">
+      <img class="mt-3 flex-self-center" src="/public/home-mate/userrearch-chart2.webp" alt="Quantitative research chart - client">
+      <p class="mt-3">And finally, those aimed at users of the professional version:</p>
+      <img class="mt-3 flex-self-center" src="/public/home-mate/userrearch-chart3.webp" alt="Quantitative research chart - professionals">
+      <h4 class="pt-2 mt-3">Qualitative research</h4>
+      <p>From all the answers I got, I selected the ones that most helped me create insights and validate the questions I raised in the CSD matrix.</p>
+      <p class="small-title mt-2 mb-1"><strong>Customers</strong></p>
+      <img class="hm-answers" src="/public/home-mate/research-answers1.webp" alt="Qualitative research quotes - client">
+      <p class="small-title m-0-mb mb-1"><strong>Professionals</strong></p>
+      <img class="hm-answers" src="/public/home-mate/research-answers2.webp" alt="Qualitative research quotes - professionals">
+      <div class="mt-3 mb-3 hm-content hm-conclusion-box">
+        <h4 class="hm-secondary-dark">Findings</h4>
+        <p>
+          Based on user research, I was able to extract the following insights:
+        </p>
+        <li class="mt-2">Users <strong>value efficiency, skill, and trust when hiring a service</strong>, hence the importance of creating a platform that shows evaluations and professional training plans;</li>
+        <li class="mt-1">Users believe that an online cleaning services contracting platform is a <strong>good way to find clients and professionals</strong>;</li>
+        <li class="mt-1">Customers see it as advantageous to <strong>see an instant quote for the service</strong> on the digital platform.</li>
+        <li class="mt-1">Professionals feel the <strong>need to equate service time with the amount of work requested</strong>.</li>
+      </div>
+    </div>
+  </section>
+  <section id="hm-defining" class="hm-bg flex-column height-auto">
+    <div class="container flex-column">
+      <h2>Defining the problem</h2>
+      <div class="hm-content hm-deskresearch">
+        <h3 id="hm-personas" class="mt-2 flex-self-start">Personas</h3>
+        <p>
+          After the empathy phase, it was time to define my target audience. To do this,
+          <strong>I created two personas: one that hires cleaning services and another that offers these services.</strong>
+        </p>
+        <p>
+          Based on user research, I decided to focus on the public <strong>with a family group of spouses and children
+          between 35 and 50 years old.</strong>
+        </p>
+        <p>That is how <strong>Maria and Francisca</strong> emerged: </p>
+        <img class="width-100 mt-3" src="/public/home-mate/persona1.webp" alt="Persona - client">
+        <img class="width-100 mt-3" src="/public/home-mate/persona2.webp" alt="Persona - professional">
+      </div>
+    </div>
+  </section>
+  <section id="hm-userjourney" class="hm-bg flex-column hm-userjourney height-auto">
+    <div class="container flex-column">
+      <div class="hm-content">
+        <h3 id="hm-deskresearch">User Journey</h3>
+        <p>
+          After identifying the target audience, conducting interviews, and <strong>defining the objectives and frustrations
+          of the personas created</strong>, I still wanted to delve deeper into what users, both clients, and professionals,
+          expect from an online cleaning service contracting platform. Therefore, I created these two user journeys.
+        </p>
+        <div class="container justify-center flex-column">
+          <img class="mt-3 scene flex-self-center" src="/public/home-mate/journey-card.webp" alt="User journey scenarios">
+          <img class="mt-3 width-100 journey flex-self-center" src="/public/home-mate/journey1.webp" alt="User journey - client">
+          <img class="mt-2 width-100 journey flex-self-center" src="/public/home-mate/journey2.webp" alt="User journey - professional">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="hm-taskflow" class="hm-bg hm-taskflow height-auto">
+    <div class="container flex-column">
+      <h2>Ideating solutions</h2>
+      <div class="hm-content">
+        <h3>Task Flow</h3>
+        <p>
+          In the first phase of project ideation, I created a <strong>task flow</strong> to map users' steps in scheduling
+          cleaning services for houses and condominiums.
+        </p>
+        <img class="width-100 mt-3" src="/public/home-mate/taskflow.webp" alt="Task flow">
+      </div>
+    </div>
+  </section>
+  <section id="hm-lowfiwireframe" class="hm-bg hm-process height-auto">
+    <div class="container justify-center">
+      <div class="hm-content flex-basis-60">
+        <h3>Low-Fidelity Wireframes</h3>
+        <p>
+          One of the most fun parts of the process has arrived: <strong>scratching in search of the ideal solutions for my application.</strong>
+        </p>
+        <p>
+          Making the drawings on paper <strong>allowed me to free up my ideas more without getting stuck in perfect
+          shapes and details.</strong> Furthermore, after transferring the drawings to Figma,
+          I was able to improve them.
+        </p>
+      </div>
+      <div class="hm-image">
+        <img class="width-100 mt-3" src="/public/home-mate/lowfiwireframe.webp" alt="Low-Fidelity Wireframing">
+      </div>
+    </div>
+    <div class="container hm-image hm-lowfiwireframes-img">
+      <img class="width-100 pb-2" src="/public/home-mate/lowfiwireframes.webp" alt="Low-Fidelity Wireframes">
+    </div>
+  </section>
+  <section id="hm-sitemap" class="hm-bg hm-sitemap height-auto">
+    <div class="container flex-column">
+      <div class="hm-content">
+        <h3>Sitemap</h3>
+        <p>
+          Next, I created a <strong>sitemap</strong> to visually represent the project and help ensure that its interaction paths are logical, efficient, and pleasant for users.
+        </p>
+        <img class="width-100 pt-3" src="/public/home-mate/sitemap.webp" alt="Sitemap">
+      </div>
+    </div>
+  </section>
+  <section id="hm-visualdesign" class="hm-bg hm-visualdesign height-auto">
+    <div class="container flex-column">
+      <h2>Developing solutions</h2>
+      <h3 class="flex-self-start">Visual Design</h3>
+      <img class="colors mt-2" src="/public/home-mate/visualdesign1.webp" alt="Visual Design - Colors and buttons">
+      <img class="buttons mt-3" src="/public/home-mate/visualdesign2.webp" alt="Visual Design - Inputs and typography">
+    </div>
+  </section>
+  <section id="hm-highfiwireframe" class="hm-bg hm-highfiwireframe height-auto">
+    <div class="container flex-column">
+      <h3 class="flex-self-start">High-Fidelity Wireframes</h3>
+      <img class="width-100 mt-2" src="/public/home-mate/highwireframe1.webp" alt="High-fidelity wireframes">
+      <img class="width-100 mt-2" src="/public/home-mate/highwireframe2.webp" alt="High-fidelity wireframes">
+    </div>
+  </section>
+  <section id="hm-usertest" class="hm-bg hm-usertest height-auto flex-column">
+    <div class="container flex-column">
+      <h2>Trying solutions</h2>
+      <div class="hm-content flex flex-row flex-column-mb mt-3 m-0-mb">
+        <div class="hm-test-intro">
+          <h3 class="flex-self-start">Usability Testing</h3>
+          <p>
+            After creating the screens presented above, I needed to conduct a usability test to determine whether
+            my project's main functionality was fulfilling its role. Furthermore, I needed to get feedback from users to determine what I could improve in the future.
+          </p>
+          <p>
+            I did the <strong>moderated usability test in person and remotely with 2 participants.</strong> I gave them the task
+            of <strong>hiring cleaning services for both the home and the condominium.</strong>
+          </p>
+        </div>
+        <div class="hm-image">
+          <img class="width-100" src="/public/home-mate/user.webp" alt="User testing the app">
+        </div>
+      </div>
+      <div class="mb-3 hm-content hm-conclusion-box">
+        <h4 class="mb-2 hm-secondary-dark">Fidings</h4>
+        <li>To my surprise, <strong>all participants managed to complete the tasks without difficulty.</strong> However, none used the “schedule” option in the menu, <strong>which was a little frustrating for me since I designed the entire flow using it as a starting point.</strong> Perhaps in a future test, with all menu screens working, I can see another type of user behavior.</li>
+        <li class="mt-1">Users found it <strong>simpler to select the categories at the top of the page, where the icons attracted the most attention.</strong></li>
+      </div>
+      <div class="flex-self-start hm-content">
+        <h3 class="mt-1">Improvements after testing</h3>
+        <p>
+          After doing user testing, I realized that I should make the following improvements:
+        </p> 
+        <li class="mt-3"><strong>Add new information to the Home</strong>, such as promotion announcements and application benefits.</li>
+        <li class="mt-1">Allow the user to <strong>choose the type of condominium they want to clean</strong>.</li>
+        <li class="mt-1"><strong>Place images that best represent each type of service.</strong></li>
+      </div>
+    </div>
+  </section>
+  <section id="hm-conclusion" class="hm-bg hm-conclusion height-auto-mb">
+    <div class="container justify-center">
+      <div class="hm-image">
+        <img src="/public/home-mate/hm-mockup-login.webp" alt="Login screen mockup">
+      </div>
+      <div class="hm-content flex-basis-60">
+        <h3>Conclusions</h3>
+        <p>
+          My main challenge was <strong>finding more time and resources to recruit more participants for my research</strong>, which involved an online questionnaire.
+        </p>
+        <p>
+          As a result, <strong>I could not develop further insights</strong>, particularly those related to the experience of <strong>cleaning professionals.</strong>
+        </p>
+        <p>
+          Therefore, <strong>in the following steps</strong>, I intend to do <strong>new research focused on developing the version for professional registration.</strong>
+        </p>
+        <p>
+          Furthermore, I will create an <strong>onboarding system</strong> for the app, as this is an excellent tool for attracting users and making them use the application efficiently.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="hm-prototype" class="hm-bg hm-conclusion hm-prototype height-auto">
+    <div class="container flex-column">
+      <div class="hm-content width-100">
+        <h3>video prototype presentation</h3>
+        <div style="padding:59% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/929510471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HomeMate - Prototype"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+  </section>
+ <footer class="mfe-footer">
+    <p>© <span class="currentYear"></span> - Daniele de Almeida - All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/daniele-almeida31/" target="_blank"><svg width="30" height="30" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="icon" d="M7.51037 0.339844C7.72852 0.339844 7.93773 0.426502 8.09199 0.580756C8.24624 0.735009 8.3329 0.944221 8.3329 1.16237V6.92004C8.3329 7.13819 8.24624 7.3474 8.09199 7.50165C7.93773 7.65591 7.72852 7.74257 7.51037 7.74257H1.7527C1.53455 7.74257 1.32534 7.65591 1.17109 7.50165C1.01683 7.3474 0.930176 7.13819 0.930176 6.92004V1.16237C0.930176 0.944221 1.01683 0.735009 1.17109 0.580756C1.32534 0.426502 1.53455 0.339844 1.7527 0.339844H7.51037ZM7.30474 6.71441V4.53472C7.30474 4.17914 7.16349 3.83812 6.91206 3.58669C6.66062 3.33526 6.31961 3.194 5.96403 3.194C5.61445 3.194 5.2073 3.40786 5.0099 3.72865V3.27214H3.86248V6.71441H5.0099V4.68689C5.0099 4.37021 5.26488 4.11112 5.58155 4.11112C5.73426 4.11112 5.8807 4.17178 5.98868 4.27976C6.09666 4.38773 6.15732 4.53418 6.15732 4.68689V6.71441H7.30474ZM2.52587 2.62646C2.70912 2.62646 2.88486 2.55367 3.01443 2.4241C3.144 2.29452 3.21679 2.11879 3.21679 1.93554C3.21679 1.55307 2.90835 1.24051 2.52587 1.24051C2.34154 1.24051 2.16475 1.31373 2.03441 1.44408C1.90407 1.57442 1.83084 1.75121 1.83084 1.93554C1.83084 2.31802 2.1434 2.62646 2.52587 2.62646ZM3.09753 6.71441V3.27214H1.95833V6.71441H3.09753Z" fill="#47454e"/>
+        </svg></a>
+      <a href="https://github.com/Danykesia" target="_blank"><svg width="34" height="34" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="icon" d="M4.64876 0.927734C4.10868 0.927734 3.57389 1.03411 3.07492 1.24079C2.57596 1.44747 2.12258 1.7504 1.74069 2.13229C0.969426 2.90356 0.536133 3.94962 0.536133 5.04036C0.536133 6.85814 1.71646 8.40037 3.34917 8.94735C3.5548 8.98025 3.6206 8.85276 3.6206 8.74172V8.04669C2.4814 8.29344 2.23876 7.49559 2.23876 7.49559C2.04958 7.01853 1.78226 6.89104 1.78226 6.89104C1.40801 6.63606 1.81105 6.64428 1.81105 6.64428C2.22231 6.67307 2.44028 7.06788 2.44028 7.06788C2.79808 7.693 3.40263 7.50793 3.63705 7.40923C3.67406 7.14191 3.78099 6.96095 3.89615 6.85814C2.98314 6.75532 2.0249 6.40164 2.0249 4.83473C2.0249 4.37823 2.18118 4.0122 2.4485 3.72021C2.40738 3.61739 2.26343 3.18968 2.48963 2.63447C2.48963 2.63447 2.83509 2.52343 3.6206 3.05396C3.9455 2.96348 4.29918 2.91824 4.64876 2.91824C4.99833 2.91824 5.35201 2.96348 5.67691 3.05396C6.46242 2.52343 6.80788 2.63447 6.80788 2.63447C7.03408 3.18968 6.89014 3.61739 6.84901 3.72021C7.11633 4.0122 7.27261 4.37823 7.27261 4.83473C7.27261 6.40575 6.31026 6.75121 5.39314 6.85402C5.5412 6.98152 5.67691 7.23239 5.67691 7.61486V8.74172C5.67691 8.85276 5.74271 8.98436 5.95246 8.94735C7.58517 8.39626 8.76138 6.85814 8.76138 5.04036C8.76138 4.50028 8.655 3.96549 8.44833 3.46652C8.24165 2.96756 7.93871 2.51419 7.55682 2.13229C7.17493 1.7504 6.72156 1.44747 6.22259 1.24079C5.72362 1.03411 5.18883 0.927734 4.64876 0.927734Z" fill="#47454e"/>
+      </svg></a>
+    </div>
+  </footer>
+  <!-- Script -->
+  <script type="module" src="src/js/script.js"></script>
+  <script type="module" src="src/js/projectspage.js"></script>
+</body>
+</html>

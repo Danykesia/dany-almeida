@@ -1,27 +1,29 @@
-import { projectDetails } from './project-details';
+// import { projectDetails } from './project-details';
 
-function renderProjectCards() {
-  const projectCardsContainer = document.querySelector('.portfolio-wrapper');
+// function renderProjectCards() {
+//   const projectCardsContainer = document.querySelector('.portfolio-wrapper');
 
-  projectDetails.forEach((details) => {
-    const template = document.createElement('template');
-    template.innerHTML = `
-      <div class="card">
-        <img src="${details.thumbnail}" alt="${details.title}">
-        <div class="overlay">
-          <p class="text-medium">${details.title}</p>
-          <i class="material-icons">visibility</i>
-        </div>
-      </div>
-    `;
-    projectCardsContainer.appendChild(template.content.cloneNode(true));
-  });
-}
+//   projectDetails.forEach((details) => {
+//     const template = document.createElement('template');
+//     template.innerHTML = `
+//       <div class="card">
+//         <img src="${details.thumbnail}" alt="${details.title}">
+//         <div class="overlay">
+//           <p class="text-medium">${details.title}</p>
+//           <i class="material-icons">visibility</i>
+//         </div>
+//       </div>
+//     `;
+//     projectCardsContainer.appendChild(template.content.cloneNode(true));
+//   });
+// }
 
-renderProjectCards();
+// renderProjectCards();
 
 // Scroll to top button - Make page go to top
 let scrollToTop = document.querySelector('#scrollToTop');
+
+scrollToTop.style.display = "none";
 
 window.onscroll = function() { scrollFunction() };
 
@@ -71,21 +73,77 @@ window.onclick = function(e){
 // Make navbar mobile appear and disappear.
 const btnToggle = document.querySelector('.toggle');
 const mobileNav = document.querySelector('.mobile-nav');
+const mbNavA = document.querySelectorAll('.mobile-nav li a');
+
 btnToggle.addEventListener('click', function () {
   this.classList.toggle('activate');
   mobileNav.style.visibility = 'visible';
   mobileNav.style.transition = 'transform .4s';
   mobileNav.classList.toggle('show-nav');
 });
-
-//Make navbar background color change
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  header.classList.toggle('navbar-color', window.scrollY > 0)
+mbNavA.forEach((a) => {
+  a.addEventListener('click', function() {
+    mobileNav.classList.remove('show-nav');
+    btnToggle.classList.remove('activate');
+  });
 });
 
+//Make navbar background color change
+const nav = document.querySelector('header');
+const aLink = document.querySelectorAll('.desktop-nav a');
+const logo = document.querySelector('.logo');
+  window.addEventListener("scroll", function(event) {
+    if(window.scrollY > 0){
+      nav.classList.add('navbar-color', window.scrollY > 0)
+        aLink.forEach((link) => {
+          link.style.color = '#917fc2';
+        link.onmouseover = () => {
+          link.style.color = 'var(--primary)';
+        };
+        link.onmouseout = () => {
+          link.style.color = '#917fc2';
+        };   
+        });
+        logo.src = '/img/logo-dark.svg';
+    }
+    else{
+      nav.classList.remove('navbar-color', window.scrollY > 0)
+      aLink.forEach((link) => {
+        link.style.color = '#fff';
+          link.onmouseover = () => {
+            link.style.color = '#84c7ff';
+          };
+          link.onmouseout = () => {
+            link.style.color = '#fff';
+          };
+      });
+      logo.src = '/img/logo-light.svg';
+    }
+});
+
+// Active link 
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.desktop-nav a'); 
+
+window.onscroll = () => {
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+  });
+
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 290;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if (top >= offset && top < offset + height) {
+      document.querySelector('.desktop-nav a[href*=' + id + ']').classList.add('active');
+    };
+  });
+};
+
 // Current year
-let currentDate = document.getElementById('currentYear')
+let currentDate = document.querySelector('.currentYear')
 let date = new Date;
 let year = date.getFullYear();
 
@@ -95,38 +153,38 @@ currentDate.innerHTML = year;
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.close-modal');
 
-closeModal.addEventListener('click', () => {
-  modal.classList.remove('show');
-  body.style.overflow = 'auto';
-});
+// closeModal.addEventListener('click', () => {
+//   modal.classList.remove('show');
+//   body.style.overflow = 'auto';
+// });
 
-function renderProjectDetails(details) {
-  const projectTitle = document.querySelector('.project-title');
-  const imageHeader = document.querySelector('.project-image-header');
-  const desktopImagesContainer = document.querySelector('.desktop-images');
-  const mobileImagesContainer = document.querySelector('.mobile-images');
+// function renderProjectDetails(details) {
+//   const projectTitle = document.querySelector('.project-title');
+//   const imageHeader = document.querySelector('.project-image-header');
+//   const desktopImagesContainer = document.querySelector('.desktop-images');
+//   const mobileImagesContainer = document.querySelector('.mobile-images');
 
-  // clear existing images
-  desktopImagesContainer.innerHTML = '';
-  mobileImagesContainer.innerHTML = '';
+//   // clear existing images
+//   desktopImagesContainer.innerHTML = '';
+//   mobileImagesContainer.innerHTML = '';
 
-  // set the details
-  projectTitle.innerHTML = details.title
-  imageHeader.src = details.imgHeader;
+//   // set the details
+//   projectTitle.innerHTML = details.title
+//   imageHeader.src = details.imgHeader;
 
-  details.desktopImages.forEach(imageSrc => {
-    const imageElement = document.createElement('img');
-    imageElement.src = imageSrc;
-    imageElement.alt = details.title;
-    desktopImagesContainer.appendChild(imageElement);
-  });
-  details.mobileImages.forEach(imageSrc => {
-    const imageElement = document.createElement('img');
-    imageElement.src = imageSrc;
-    imageElement.alt = details.title;
-    mobileImagesContainer.appendChild(imageElement);
-  });
-}
+//   details.desktopImages.forEach(imageSrc => {
+//     const imageElement = document.createElement('img');
+//     imageElement.src = imageSrc;
+//     imageElement.alt = details.title;
+//     desktopImagesContainer.appendChild(imageElement);
+//   });
+//   details.mobileImages.forEach(imageSrc => {
+//     const imageElement = document.createElement('img');
+//     imageElement.src = imageSrc;
+//     imageElement.alt = details.title;
+//     mobileImagesContainer.appendChild(imageElement);
+//   });
+// }
 
 const elements = document.querySelectorAll('.scroll-right, .fade')
 const scrollPosition = window.innerHeight * 0.7;
@@ -162,4 +220,3 @@ cardOverlay.forEach((overlay, index) => {
     renderProjectDetails(projectDetails[index]);
   });
 });
-

@@ -1,12 +1,6 @@
 main {
   width: 100%;
-  height: 900px;
-  background-image: url(/img/Cosmic-bg2.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--primary);
-  border-radius: 0 0 204px 0;
+  background-color: var(--body-color);
   display: flex;
   align-items: center;
 }
@@ -15,26 +9,22 @@ main > * {
   position: relative;
 }
 
-main .container {
-  position: absolute;
-  top: 138px;
-}
-
 .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px;
+  gap: 50px;
+  margin: 130px 0 40px;
 }
 
 .headline {
-  color: var(--text-light);
+  color: var(--primary-x-dark);
   position: relative;
 }
 
 .headline h1 {
-  font-size: var(--text-size-xxl);
-  line-height: 1.2;
+  font-size: 3.2rem;
+  line-height: 1.1;
 }
 
 .headline p {
@@ -49,149 +39,125 @@ main .container {
   background-size: 36px;
   width: 40px;
   height: 40px;
-  left: 120px;
+  left: 130px;
   top: 10px;
 }
 
 .headline .btn {
-  color: var(--color-light);
   letter-spacing: 1px;
   margin-top: 26px;
-  box-shadow: 0px 4px 20px rgba(98, 52, 104, 0.303);
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: var(--text-size-xs);
   text-transform: uppercase;
   padding: 12px 24px;
-}
-
-.banner-img {
-  margin-top: -56px;
+  background-color: var(--accent);
+  color: var(--text-light);
 }
 
 .banner-img img {
   width: 100%;
 }
 
-@media (min-width: 484px) {
-  main {
-    height: 860px;
-  }
+.main-wrapper .social-icons {
+  margin-top: 20px;
 }
 
-@media (min-width: 390px) {
-  .banner-img {
-    margin-top: -32px;
-    width: 350px;
-  }
-}
-
-@media (min-width: 628px) {
-  main {
-    height: 768px;
-  }
-}
-
-@media (min-width: 667px) {
-  .banner-img {
-    margin-top: -50px;
-  }
+.social-icons svg {
+  height: fit-content;
 }
 
 @media (min-width: 740px) {
   main {
-    height: 630px;
+    height: 100%;
+    padding: 40px 0;
   }
 
+  .headline h1 {
+    font-size: var(--text-size-xxxl);
+  }
+  
   .main-wrapper {
     flex-direction: row;
+    gap: 20px;
+    margin-top: 90px;
   }
 
   .headline {
-    flex-basis: 60%;
+    flex-basis: 64%;
   }
 
   .headline::before {
-    left: 210px;
-    top: 67px;
-  }
-
-  .banner-img {
-    flex-basis: 40%;
-  }
+    left: 268px;
+    top: 162px;
+   }
 
   .break-line {
     display: none;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 783px) {
   main {
-    height: 575px;
-    border-radius: 0 0 280px 0;
+    padding: 90px 0;
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 847px) {
+  .headline::before {
+    left: 336px;
+    top: 92px;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 924px) {
+  .headline::before {
+    left: 338px;
+  }
+}
+
+@media (min-width: 958px) {
   .headline {
     flex-basis: 55%;
   }
+}
 
-  .banner-img {
-    flex-basis: 45%;
-    margin-right: 54px;
-  }
-
-  main .container {
-    top: 130px;
+@media (min-width: 1010px) {
+  .headline::before {
+    left: 266px;
   }
 }
 
 @media (min-width: 1024px) {
-  main {
-    height: 96vh;
-  }
-
   .headline {
-    padding-left: 90px;
+    padding-left: 58px;
   }
 
   .headline::before {
     background-size: 40px;
     width: 40px;
     height: 50px;
-    left: 25px;
+    left: 0px;
     top: 14px;
   }
 
-  .headline h1 {
-    font-size: var(--text-size-xxxl);
-  }
-
-  .headline .btn {
-    margin-top: 30px;
-  }
-
   .headline .btn:hover {
-    box-shadow: 0px 4px 20px rgba(98, 52, 104, 0.529);
+    background-color: var(--accent-dark);
+    transform: scale(1.07);
   }
 }
 
 @media (min-width: 1200px) {
-  .main-wrapper {
-    margin-top: 0;
+  .headline {
+    padding-left: 90px;
   }
-}
 
-@media (min-width: 1440px) {
-  main {
-    justify-content: center;
+  .headline::before {
+    left: 30px;
   }
 
   .main-wrapper {
-    margin-top: 0;
-  }
-
-  .banner-img img {
-    width: 610px;
+    gap: 0;
   }
 }

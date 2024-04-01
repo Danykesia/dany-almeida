@@ -1,7 +1,7 @@
 header {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: var(--primary);
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -9,10 +9,11 @@ header {
   z-index: 1000;
   width: 100%;
   transition: all 0.3s;
+  box-shadow: 0px 3px 20px #5757571a;
 }
 
 header.navbar-color {
-  background-color: #200530d0;
+  background-color: var(--body-color);
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
 }
@@ -32,6 +33,18 @@ nav a {
   cursor: pointer;
 }
 
+nav .project-nav a {
+  margin: 0 10px;
+  font-size: var(--text-size-s);
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+nav .project-nav {
+  display: flex;
+  align-items: center;
+}
+
 nav .desktop-nav {
   display: none;
 }
@@ -39,7 +52,10 @@ nav .desktop-nav {
 nav .logo {
   width: 110px;
   position: relative;
-  z-index: 1;
+}
+
+.navbar-right {
+  display: none;
 }
 
 .mobile-nav {
@@ -52,12 +68,15 @@ nav .logo {
   top: 0;
   -webkit-backdrop-filter: blur(6px) !important;
   backdrop-filter: blur(6px) !important;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   visibility: hidden;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .mobile-nav.show-nav {
   transform: translateX(0);
+  left: 90px;
 }
 
 .mobile-nav i {
@@ -71,14 +90,15 @@ nav .logo {
 .mobile-nav ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 40px;
 }
 
 .mobile-nav a {
   padding: 20px;
   display: block;
-  font-size: var(--text-size-l);
+  font-size: var(--text-size-m);
   border-bottom: 1px solid #dfbaff;
+  color: #fff;
 }
 
 .toggle {
@@ -86,9 +106,9 @@ nav .logo {
   overflow: hidden;
   width: 42px;
   height: 42px;
-  background: rgba(232, 190, 255, 0.463);
-  border-radius: 10px;
-  box-shadow: 0 3px 7px 0 rgba(57, 6, 86, 0.427);
+  background: #775fb9;
+  border-radius: 4px;
+  box-shadow: 0 3px 7px 0 rgba(6, 59, 86, 0.243);
   position: relative;
   display: flex;
   align-items: center;
@@ -123,7 +143,7 @@ nav .logo {
 }
 
 .toggle.activate .line-toggle:first-child {
-  background: var(--primary-x-dark);
+  background: var(--text-light);
   transform: translateY(0) translateX(0) rotate(45deg);
   width: 30px;
   height: 5px;
@@ -138,7 +158,7 @@ nav .logo {
 }
 
 .toggle.activate .line-toggle:last-child {
-  background: var(--primary-x-dark);
+  background: var(--text-light);
   transform: translateY(0) translateX(0) rotate(314deg);
   width: 30px;
   height: 5px;
@@ -161,7 +181,7 @@ nav .logo {
 }
 
 .menu-right .languages button:hover {
-  background-color: #601d89;
+  background-color: #7c49be;
 }
 
 .language-active {
@@ -182,8 +202,8 @@ nav .logo {
 .languages button {
   cursor: pointer;
   display: flex;
-  background-color: rgba(104, 60, 135, 0.522);
-  color: var(--primary-light);
+  background-color: #a067ec;
+  color: #fff;
   border: none;
   border-radius: 4px;
 }
@@ -236,6 +256,11 @@ nav .logo {
     align-items: center;
   }
 
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+  }
+
   .desktop-nav li {
     transition: all 0.4s;
   }
@@ -247,10 +272,15 @@ nav .logo {
   .desktop-nav a {
     margin: 0 10px;
     font-size: var(--text-size-s);
+    color: #fff;
   }
 
-  .desktop-nav a:hover {
-    color: #8beaff;
+  .desktop-nav a:hover, .project-nav a:hover {
+    color: #84c7ff;
+  }
+
+  .desktop-nav a.active {
+    color: var(--primary) !important;
   }
 
   .btn-contact {
@@ -285,6 +315,6 @@ nav .logo {
   }
 
   .desktop-nav a {
-    margin: 0 30px;
+    margin: 0 20px;
   }
 }
