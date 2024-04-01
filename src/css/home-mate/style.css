@@ -1,0 +1,651 @@
+:root {
+  --hm-text-light: #FDFEFF;
+  --hm-primary-dark: #252D4C;
+  --hm-secondary-dark: #09417A;
+  --hm-primary-light: #E5EFFC;
+  --hm-font-primary: "Titillium Web", sans-serif;
+  --hm-font-secondary: "Roboto", sans-serif;
+}
+
+#hm-discovering span {
+  line-break: anywhere;
+}
+
+#hm strong {
+  font-weight: 600;
+}
+
+section.height-auto {
+  padding: 60px 0;
+}
+
+.hm-bg .container.align-stretch {
+  align-items: stretch;
+}
+
+.hm-secondary-dark {
+  color: var(--hm-secondary-dark);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-self-start {
+  align-self: flex-start;
+}
+
+.flex-self-center {
+  align-self: center;
+}
+
+.hm-content strong {
+  font-weight: 700;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+.flex-basis-60 {
+  flex-basis: 60%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+#hm h2 {
+  font-size: 32px;
+}
+
+#hm h3, #hm h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#hm h3 {
+  font-size: 28px;
+}
+
+#hm h4 {
+  font-size: 22px;
+}
+
+.hm-research-content p, .content-border p {
+  margin-top: 0 !important;
+}
+
+.hm-content p {
+  margin-top: 15px;
+}
+
+.hm-bg, .hm-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hm-banner {
+  background-image: url(/public/home-mate/home-mate-bg-1.jpg);
+}
+
+.hm-banner .container {
+  display: flex;
+  align-items: center;
+}
+
+.hm-headline .title {
+  text-transform: capitalize;
+  font-size: 75px;
+}
+
+.hm-headline .subtitle {
+  font-size: 20px;
+  line-height: 2.1rem;
+}
+
+.hm-mockup {
+  display: flex;
+  justify-content: center;
+  flex-basis: 40%;
+  margin-top: 100px;
+}
+
+.hm-headline {
+  flex-basis: 60%;
+  color: var(--hm-primary-dark);
+  margin-top: 65px;
+}
+
+.hm-subheadline {
+  font-size: 28px !important;
+}
+
+.hm-headline h2 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.hm-mockup img {
+  margin-top: 26px;
+  width: 90%;
+}
+
+.hm-summary {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.hm-summary p {
+  font-size: 18px;
+}
+
+.hm-bg {
+  background-image: url(/public/home-mate/home-mate-bg-2.jpg);
+  margin-top: 5px;
+  color: var(--hm-primary-dark);
+}
+
+.hm-bg .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hm-bg .hm-image {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.hm-overview .hm-image img {
+  width: 60%;
+}
+
+.hm-whytodo .hm-image img, .hm-userjourney .scene, .hm-visualdesign .colors {
+  width: 90%;
+}
+
+.hm-problemstmt .hm-image img, .hm-lowfiwireframes-img {
+  width: 85%;
+}
+
+.hm-visualdesign .buttons {
+  width: 70%;
+}
+
+.width-100, .hm-userresearch .hm-answers, .hm-process-details {
+  width: 100%;
+}
+
+.hm-problemstmt ul {
+  padding-left: 20px;
+}
+
+.hm-content li {
+  list-style: disc;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.hm-bg.hm-process {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hm-process-details {
+  display: flex;
+  flex-direction: row;;
+  gap: 10px;
+}
+
+.container.hm-process-details {
+  justify-content: flex-start;
+  max-width: 1160px;
+  padding: 0px;
+  margin-top: 20px;
+  align-items: normal;
+  gap: 10px;
+}
+
+.hm-process-details .box {
+  background-color: #F0F4F8;
+  padding: 20px;
+  border-radius: 4px;
+  width: 20%;
+}
+
+.hm-process-details .box p {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.hm-process-details .box p:first-child {
+  margin-top: 0;
+  font-weight: bold;
+  color: var(--hm-secondary-dark);
+}
+
+.hm-research-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.height-auto {
+  height: auto;
+}
+
+.content-border {
+  border: 2px solid #A4C9EE;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.hm-content span {
+  color: gray;
+  margin-top: 8px;
+}
+
+.hm-conclusion-box {
+  background-color: #fbfbfb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6.675px 0px rgba(0, 0, 0, 0.13);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hm-conclusion-box h4 {
+  text-transform: uppercase;
+}
+
+.hm-competitor .hm-content img:first-child {
+  width: 40%;
+}
+
+.hm-competitor .hm-content.flex-row {
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.hm-competitor > .hm-content.flex-row p {
+  width: 50%;
+}
+
+.hm-matrixcsd .hm-image {
+  flex-basis: 50%;
+}
+
+.hm-userresearch img {
+  width: 70%;
+}
+
+.hm-userresearch .hm-image-bg {
+  padding: 50px;
+  background-color: #D9E1EC;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hm-userresearch .hm-content {
+  align-items: center;
+  gap: 30px;
+}
+
+.container.hm-research-result {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hm-research-result  h4 {
+  text-transform: uppercase;
+}
+
+.hm-research-result {
+  margin-top: 50px;
+}
+
+.hm-lowfiwireframes-img {
+  margin-top: 60px;
+}
+
+.hm-visualdesign img {
+  align-self: self-start;
+}
+
+.hm-test-intro {
+  flex-basis: 70%;
+}
+
+.hm-usertest .hm-image {
+  flex-basis: 30%;
+}
+
+.hm-usertest .hm-content {
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hm-usertest h3 {
+  margin-bottom: 0 !important;
+}
+
+.hm-csdmatrix .hm-image.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+.hm-userresearch .flex-basis-50 {
+  padding-right: 20px;
+}
+
+.hm-conclusion img {
+  width: 60%;
+  margin-left: 70px;
+}
+
+@media(max-width: 1160px) {
+  .container.hm-process-details {
+    padding: 0 10px;
+  }
+}
+
+@media(max-width: 1120px) {
+  .hm-headline .title {
+    font-size: 65px;
+  }
+
+  .hm-subheadline {
+    font-size: 26px !important;
+  }
+
+  .hm-summary p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .height-auto-mb {
+    height: auto;
+  }
+
+  section.height-auto-mb {
+    padding: 60px 0;
+  }
+}
+
+@media(max-width: 960px) {
+  .hm-summary {
+    gap: 20px;
+  }
+}
+
+@media(max-width: 850px) {
+  .hm-headline .title {
+    font-size: 55px;
+  }
+
+  .hm-headline .subtitle {
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+
+  .hm-summary {
+    gap: 10px;
+  }
+
+  .hm-overview .hm-image img {
+    width: 75%;
+  }
+
+  .hm-image.flex-basis-md-50 {
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 739px) {
+  .width-70 {
+    width: 70%;
+  }
+
+  .pb-6-mb {
+    padding-bottom: 60px;
+  }
+
+  .m-0-mb {
+    margin: 0;
+  }
+
+  .flex-basis-100 {
+    flex-basis: 100%;
+  }
+
+  #hm-discovering h2 {
+    margin-bottom: 0;
+  }
+
+  #hm-discovering h3 {
+    margin-top: 10px;
+  }
+
+  .hm-bg .container.align-normal, .hm-research-content.align-normal {
+    align-items: normal;
+  }
+
+  .hm-research-content.align-normal {
+    margin-top: 0;
+    gap: 10px;
+  }
+  
+  .height-auto-mb {
+    height: auto;
+  }
+
+  section.height-auto-mb {
+    padding: 60px 0;
+  }
+
+  .hm-competitor .hm-content img:first-child, .hm-competitor > .hm-content.flex-row p, .hm-userjourney .scene,
+  .hm-userresearch img  {
+    width: 100%;
+  }
+
+  .hm-competitor > .hm-content.flex-row p {
+    margin-top: -10px;
+  }
+
+  .hm-competitor .hm-content.flex-column {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+
+  .hm-banner .container, .hm-overview .container, .hm-whytodo .container, .hm-problemstmt .container,
+  .hm-process .container.flex-column-mb, .hm-research-content, .hm-bg .container.align-stretch, .hm-csdmatrix .container,
+  .hm-userresearch .hm-content, .hm-competitor .hm-content.flex-column, #hm-lowfiwireframe .container, .flex-column-mb,
+  .hm-conclusion .container  {
+    flex-direction: column;
+  }
+
+  .hm-userresearch .hm-content {
+    padding: 20px;
+  }
+
+  .hm-bg .container.align-stretch {
+    margin-top: 20px;
+  }
+  
+  .hm-conclusion-box {
+    margin: 15px auto 0;
+  }
+
+  .hm-research-content {
+    gap: 0;
+  }
+
+  .hm-highfiwireframe .container {
+    gap: 15px;
+  }
+
+  .content-border {
+    margin-top: 10px !important;
+  }
+
+  .hm-whytodo .container, .hm-overview .container, .hm-problemstmt .container  {
+    gap: 40px;
+  }
+
+  .hm-csdmatrix .container {
+    gap: 25px;
+  }
+
+  .hm-overview .container, .hm-problemstmt .container, .hm-conclusion .container {
+    flex-direction: column-reverse;
+  }
+
+  .hm-summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hm-mockup {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .hm-mockup img {
+    margin-top: 0;
+    width: 70%;
+  }
+
+  .hm-overview .hm-image img {
+    width: 65%;
+  }
+
+  .container.hm-process-details {
+    padding: 0 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .hm-process-details .box {
+    width: 32%;
+  }
+
+  .hm-research-result {
+    margin-top: 10px;
+  }
+
+  .hm-userresearch img {
+    margin-top: 15px;
+  }
+
+  .hm-research-result h4 {
+    margin-top: 10px;
+  }
+
+  .hm-userresearch .hm-answers {
+    margin-top: -3px;
+  }
+
+  #hm-defining .container {
+    gap: 0;
+  }
+
+  #hm-defining img:last-child, #hm-lowfiwireframe img, .hm-visualdesign .buttons {
+    margin-top: 10px;
+  }
+
+  .hm-userjourney .container img:first-child {
+    margin-top: 20px;
+  }
+
+  .hm-userjourney .container img:nth-child(2), .hm-userjourney .container img:last-child, .hm-visualdesign .colors {
+    margin-top: 0px;
+  }
+
+  .hm-userjourney .container {
+    gap: 15px;
+  }
+
+  #hm-discovering h2, #hm-defining h2, #hm-taskflow h2, .hm-visualdesign h2, .hm-usertest h2 {
+    text-align: center;
+  }
+
+  .hm-lowfiwireframes-img {
+    margin-top: 15px;
+  }
+
+  .small-title {
+    font-size: 18px;
+  }
+
+  .hm-userjourney .hm-content div {
+    padding: 0;
+  }
+
+  .hm-visualdesign h3 {
+    margin-bottom: 0;
+  }
+
+  .hm-highfiwireframe img {
+    margin-top: 0;
+  }
+
+  .hm-conclusion img {
+    width: 70%;
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 539px) {
+  .hm-process-details .box {
+    width: 48%;
+  }
+
+  .container.hm-process-details {
+    gap: 15px;
+  }
+}
+
+@media(max-width: 500px) {
+  .hm-mockup img, .width-100 {
+    width: 100%;
+  }
+
+  .hm-overview .hm-image img {
+    width: 75%;
+  }
+}
+
+@media(max-width: 414px) {
+  .hm-process-details .box {
+    width: 100%;
+  }
+}
