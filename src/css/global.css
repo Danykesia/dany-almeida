@@ -7,7 +7,7 @@
   --primary-medium: #221547;
   --primary-light: #d8ceff;
   --accent: #4f9ce4;
-  --accent-dark: #2464a1;
+  --accent-dark: #346da3;
   --accent-light: #ceebf9;
   --bg-light: #e7f1f5;
   --body-color: rgb(253, 254, 255);
@@ -70,6 +70,12 @@ body {
   position: relative;
   scrollbar-width: auto;
   scrollbar-color: #ac8ace #ebeef1;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 a {
