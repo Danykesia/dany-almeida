@@ -589,10 +589,6 @@
   background-color:#D8E5F8;
 }
 
-.mfe-branding .container.col.reverse  {
-  margin: 30px 0;
-}
-
 @media(max-width: 1166px) {
   .mfe-headline .title {
     font-size: 52px;
