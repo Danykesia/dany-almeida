@@ -1,13 +1,13 @@
 #about {
   margin: 50px 0;
-  position: relative;
 }
 
 @media(min-width: 1100px) {
   #about {
-    margin: 100px 0;
+    margin: 130px 0;
     height: 100%;
   }
+
   #about h2, #about p {
     padding: 0 110px;
   }

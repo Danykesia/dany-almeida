@@ -135,7 +135,8 @@
   display: block;
   font-size: var(--text-size-m);
   color: #fff;
-  font-family: var(--font-primary)
+  font-family: var(--font-primary);
+  margin: 0 30px;
 }
 
 .mfe-mobile-nav a:hover {
@@ -603,6 +604,10 @@
 
   .mfe-branding .container.col {
     margin-top: 20px;
+  }
+
+  .mfe-mobile-nav a {
+    margin: 0 20px;
   }
 }
 

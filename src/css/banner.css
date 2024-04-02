@@ -70,8 +70,7 @@ main > * {
 
 @media (min-width: 740px) {
   main {
-    height: 100%;
-    padding: 40px 0;
+    height: 100vh;
   }
 
   .headline h1 {
@@ -95,12 +94,6 @@ main > * {
 
   .break-line {
     display: none;
-  }
-}
-
-@media (min-width: 783px) {
-  main {
-    padding: 90px 0;
   }
 }
 
