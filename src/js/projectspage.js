@@ -24,3 +24,20 @@ projectNavA.forEach((a) => {
     btnToggle.classList.remove('activate');
   });
 });
+
+// Modal
+const projectModal = document.querySelector('.project-modal');
+const modalImg = document.querySelector('.modal-img');
+const closeModal = document.querySelector('.project-modal i');
+
+closeModal.addEventListener('click', () => {
+  projectModal.style.display = 'none';
+})
+
+const modalBox = document.querySelector('.mfe-modal-box');
+modalBox.addEventListener('click', (e) => {
+  if (e.target.matches('.mapping-img')) {
+    projectModal.style.display = 'flex';
+    modalImg.src = 'public/metal-for-everyone-img/sitemapping.webp'
+  }
+})

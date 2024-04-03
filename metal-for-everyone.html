@@ -69,6 +69,11 @@
       </nav>
     </div>
   </header>
+  <!-- Modal -->
+  <section class="project-modal">
+    <i class="material-icons">close</i>
+    <img class="modal-img" src="" alt="">
+  </section>
   <section class="mfe-banner">
     <div class="container">
       <div class="mfe-headline">
@@ -351,7 +356,10 @@
           After carrying out benchmarking and discovering users' needs and pain points, 
           <strong>I created a sitemap to visually represent the project.</strong>
         </p>
-        <img class="mt-3" src="/public/metal-for-everyone-img/sitemapping.webp" alt="Site map">
+        <div class="mfe-modal-box">
+          <div class="mfe-overlay mapping-img"><i class="material-icons">zoom_in</i></div>
+          <img class="mt-3" src="/public/metal-for-everyone-img/sitemapping.webp" alt="Site map">
+        </div>
       </div>
     </div>
   </section>
@@ -532,7 +540,7 @@
     <div class="container flex flex-column">
       <img class="flex-self-center" src="/public/metal-for-everyone-img/mfe-test-table.webp" alt="User test table">
     </div>
-    <div class="containter">
+    <div class="container">
       <div class="mfe-insights-cards content">
         <div class="mfe-insights-card">
           <h3 class="mb-2">findings and next steps</h3>
