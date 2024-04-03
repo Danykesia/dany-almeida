@@ -372,6 +372,12 @@ section.height-auto {
   margin-left: 70px;
 }
 
+.hm-prototype a {
+  font-size: 20px !important;
+  font-weight: 600;
+  margin: 0 !important;
+}
+
 @media(max-width: 1160px) {
   .container.hm-process-details {
     padding: 0 10px;

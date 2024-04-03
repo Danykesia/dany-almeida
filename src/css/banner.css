@@ -43,7 +43,7 @@ main > * {
   top: 10px;
 }
 
-.headline .btn {
+.headline .btn, .mfe-prototype .btn, .hm-prototype .btn {
   letter-spacing: 1px;
   margin-top: 26px;
   display: flex;
@@ -135,7 +135,7 @@ main > * {
     top: 14px;
   }
 
-  .headline .btn:hover {
+  .headline .btn:hover, .mfe-prototype .btn:hover, .hm-prototype .btn:hover {
     background-color: var(--accent-dark);
     transform: scale(1.07);
   }

@@ -650,6 +650,12 @@
   cursor: pointer;
 }
 
+.mfe-prototype a {
+  font-weight: 600;
+  font-size: 20px !important;
+  margin: 0 auto;
+}
+
 @media(max-width: 1166px) {
   .mfe-modal-box:hover .mfe-overlay {
     display: none;
