@@ -405,7 +405,6 @@
 .mfe-insights-cards {
   display: flex;
   flex-direction: row;
-  padding: 0 100px;
   gap: 20px;
   margin: -10px 0 0px;
 }
@@ -652,12 +651,12 @@
 }
 
 @media(max-width: 1166px) {
-  .mfe-headline .title {
-    font-size: 52px;
+  .mfe-modal-box:hover .mfe-overlay {
+    display: none;
   }
 
-  .mfe-insights-cards {
-    padding: 0;
+  .mfe-headline .title {
+    font-size: 52px;
   }
 
   .mfe-branding .container.col {
@@ -800,7 +799,6 @@
 
   .mfe-usertest .mfe-insights-cards {
     margin-top: 50px;
-    padding: 0 20px;
   }
 
   .mfe-whytodo .container {
