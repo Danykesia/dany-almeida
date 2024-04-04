@@ -111,6 +111,10 @@
   .hm img {
     width: 50%;
   }
+
+  #projects {
+    padding: 100px 0;
+  }
 }
 
 
