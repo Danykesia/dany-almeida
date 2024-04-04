@@ -38,6 +38,6 @@ const modalBox = document.querySelector('.mfe-modal-box');
 modalBox.addEventListener('click', (e) => {
   if (e.target.matches('.mapping-img')) {
     projectModal.style.display = 'flex';
-    modalImg.src = 'public/metal-for-everyone-img/sitemapping.webp'
+    modalImg.src = '/metal-for-everyone-img/sitemapping.webp'
   }
 })
