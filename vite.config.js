@@ -1,11 +1,13 @@
+import { resolve } from 'path';
+
 export default {
   build: {
     rollupOptions: {
       input: {
-        index: 'index.html',
-        'index-pt': 'index-pt.html',
-        'home-mate': 'home-mate.html',
-        'metal-for-everyone': 'metal-for-everyone.html'
+        main: resolve(__dirname, 'index.html'),
+        mainPt: resolve(__dirname, 'pt/index.html'),
+        homeMate: resolve(__dirname, 'home-mate/index.html'),
+        metalForEveryone: resolve(__dirname, 'metal-for-everyone/index.html'),
       }
     }
   }
