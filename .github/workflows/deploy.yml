@@ -13,17 +13,22 @@ jobs:
       env:
         CONTAINER: my-portfolio
         IMAGE: my-portfolio
+        PROJECTDIR: dany-almeida
+        REPO: git@github.com:Danykesia/dany-almeida.git
         TAG: latest
-        WORKDIR: portfolio/js-projects/my-portfolio
+        WORKDIR: portfolio/js-projects
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        envs: CONTAINER, IMAGE, TAG, WORKDIR
+        envs: CONTAINER, IMAGE, PROJECTDIR, REPO, TAG, WORKDIR
         script: |
+          rm -rf $WORKDIR/$PROJECTDIR
+          mkdir -p $WORKDIR
           cd $WORKDIR
-          git pull
+          git clone $REPO
+          cd $PROJECTDIR
           cp .env.example .env
           source .env
           docker build -t $IMAGE:$TAG .
