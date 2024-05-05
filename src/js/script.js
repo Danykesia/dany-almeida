@@ -47,20 +47,24 @@ let hiddenMobileFlag = document.querySelector('.language-m-hidden');
 let hiddenDesktopFlag = document.querySelector('.language-d-hidden');
 let body = document.querySelector('body');
 
-arrowMobileDown.addEventListener('click', () => {
-  hiddenMobileFlag.classList.toggle('show');
-});
+if (arrowMobileDown) {
+  arrowMobileDown.addEventListener('click', () => {
+    hiddenMobileFlag.classList.toggle('show');
+  });
+}
 
-arrowDesktopDown.addEventListener('click', () => {
-  hiddenDesktopFlag.classList.toggle('show');
-});
+if (arrowMobileDown) {
+  arrowDesktopDown.addEventListener('click', () => {
+    hiddenDesktopFlag.classList.toggle('show');
+  });
+}
 
 window.onclick = function(e){
-  if (!e.target.matches('.btn-m-languages') && hiddenMobileFlag.classList.contains('show')) {
+  if (!e.target.matches('.btn-m-languages') && hiddenMobileFlag && hiddenMobileFlag.classList.contains('show')) {
     hiddenMobileFlag.classList.remove('show');
   }
 
-  if (!e.target.matches('.btn-d-languages') && hiddenDesktopFlag.classList.contains('show')) {
+  if (!e.target.matches('.btn-d-languages') && hiddenDesktopFlag && hiddenDesktopFlag.classList.contains('show')) {
     hiddenDesktopFlag.classList.remove('show');
   }
 
@@ -75,12 +79,14 @@ const btnToggle = document.querySelector('.toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 const mbNavA = document.querySelectorAll('.mobile-nav li a');
 
-btnToggle.addEventListener('click', function () {
-  this.classList.toggle('activate');
-  mobileNav.style.visibility = 'visible';
-  mobileNav.style.transition = 'transform .4s';
-  mobileNav.classList.toggle('show-nav');
-});
+if (btnToggle) {
+  btnToggle.addEventListener('click', function () {
+    this.classList.toggle('activate');
+    mobileNav.style.visibility = 'visible';
+    mobileNav.style.transition = 'transform .4s';
+    mobileNav.classList.toggle('show-nav');
+  });
+}
 mbNavA.forEach((a) => {
   a.addEventListener('click', function() {
     mobileNav.classList.remove('show-nav');
@@ -137,7 +143,10 @@ window.onscroll = () => {
     let id = sec.getAttribute('id');
 
     if (top >= offset && top < offset + height) {
-      document.querySelector('.desktop-nav a[href*=' + id + ']').classList.add('active');
+      const element = document.querySelector('.desktop-nav a[href*=' + id + ']');
+      if (element) {
+        element.classList.add('active');
+      }
     };
   });
 };
