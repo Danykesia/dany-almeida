@@ -106,7 +106,7 @@ section.height-auto {
 }
 
 .hm-banner {
-  background-image: url(/public/home-mate/home-mate-bg-1.jpg);
+  background-image: url(/home-mate/home-mate-bg-1.jpg);
 }
 
 .hm-banner .container {
@@ -162,7 +162,7 @@ section.height-auto {
 }
 
 .hm-bg {
-  background-image: url(/public/home-mate/home-mate-bg-2.jpg);
+  background-image: url(/home-mate/home-mate-bg-2.jpg);
   margin-top: 5px;
   color: var(--hm-primary-dark);
 }
