@@ -40,7 +40,7 @@ nav .project-nav a {
   font-family: var(--font-primary);
 }
 
-nav .project-nav {
+nav .desktop-nav.project-nav {
   display: flex;
   align-items: center;
 }
@@ -275,7 +275,8 @@ nav .logo {
     color: #fff;
   }
 
-  .desktop-nav a:hover, .project-nav a:hover {
+  .desktop-nav a:hover,
+  .project-nav a:hover {
     color: #84c7ff;
   }
 
