@@ -38,7 +38,7 @@
   background-color: #f0dbd6;
 }
 
-.hm img {
+.hm img, .fb img {
   width: 230px;
 }
 
@@ -96,7 +96,7 @@
     border-radius: 10px 0 0 10px;
   }
 
-  .hm img {
+  .hm img, .fb img {
     width: 55%;
   }
   
@@ -112,7 +112,7 @@
 }
 
 @media(min-width: 1024px) {
-  .hm img {
+  .hm img, .fb img {
     width: 50%;
   }
 
@@ -127,7 +127,7 @@
     width: 75%;
   }
 
-  .hm img {
+  .hm img, .fb img {
     width: 42%;
   }
 }
