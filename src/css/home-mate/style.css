@@ -109,7 +109,7 @@ section.height-auto {
   background-image: url(/home-mate/home-mate-bg-1.jpg);
 }
 
-.hm-banner .container {
+.hm-banner .container, .fb-banner .container {
   display: flex;
   align-items: center;
 }
@@ -492,7 +492,7 @@ section.height-auto {
     padding: 10px 20px;
   }
 
-  .hm-banner .container, .hm-overview .container, .hm-whytodo .container, .hm-problemstmt .container,
+  .hm-banner .container, .fb-banner .container, .hm-overview .container, .hm-whytodo .container, .hm-problemstmt .container,
   .hm-process .container.flex-column-mb, .hm-research-content, .hm-bg .container.align-stretch, .hm-csdmatrix .container,
   .hm-userresearch .hm-content, .hm-competitor .hm-content.flex-column, #hm-lowfiwireframe .container, .flex-column-mb,
   .hm-conclusion .container  {
