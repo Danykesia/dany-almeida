@@ -97,7 +97,7 @@ section.height-auto {
   margin-top: 15px;
 }
 
-.hm-bg, .hm-banner {
+.hm-bg, .hm-banner, .fb-banner {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
