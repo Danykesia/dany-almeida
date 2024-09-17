@@ -2,6 +2,32 @@
     flex-direction: column-reverse;
 }
 
+.fb.image {
+    position: relative;
+}
+
+.fb.image::after {
+    position: absolute;
+    content: '';
+    background-image: url(/public/fin-buddy/loading-img.svg);
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb.image::before {
+    position: absolute;
+    content: '';
+    background-color: #47454e8f;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    top: 0;
+    left: 0;
+}
+
 @media(min-width: 740px) {
     .fb.project-wrap {
         flex-direction: row;
