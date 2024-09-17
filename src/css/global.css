@@ -337,6 +337,10 @@ li {
   transform: scale(1.09);
 }
 
+.project-wrap .description p:first-child {
+  color: var(--primary);
+}
+
 footer {
   height: auto;
   padding: 15px 20px;

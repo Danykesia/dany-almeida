@@ -1,0 +1,9 @@
+.fb.project-wrap {
+    flex-direction: column-reverse;
+}
+
+@media(min-width: 740px) {
+    .fb.project-wrap {
+        flex-direction: row;
+    }
+}

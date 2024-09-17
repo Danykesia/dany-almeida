@@ -33,9 +33,12 @@
   background-color: #c9c8e6;
 }
 
+.fb {
+  background-color: #f0dbd6;
+}
+
 .hm img {
   width: 230px;
-  margin-top: 25px;
 }
 
 .mfe img {
@@ -124,6 +127,6 @@
   }
 
   .hm img {
-    width: 40%;
+    width: 42%;
   }
 }
